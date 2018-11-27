@@ -5,12 +5,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import './layout.css';
 
-import appleTouchIcon from '../images/favicon/apple-touch-icon.png';
-import favicon32 from '../images/favicon/favicon-32x32.png';
-import favicon16 from '../images/favicon/favicon-16x16.png';
-// import manifest from '../images/favicon/site.webmanifest';
-import maskIcon from '../images/favicon/safari-pinned-tab.svg';
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -19,9 +13,6 @@ const Layout = ({ children }) => (
           siteMetadata {
             title
           }
-        }
-        manifest: file(relativePath: { eq: "favicon/site.webmanifest" }) {
-          publicURL
         }
       }
     `}
@@ -32,25 +23,6 @@ const Layout = ({ children }) => (
           meta={[
             { name: 'description', content: 'Puente Technology and Design' },
             { name: 'keywords', content: 'software, design, technology' },
-            { name: 'msapplication-TileColor', content: '#da532c' },
-            { name: 'theme-color', content: '#ffffff' },
-          ]}
-          link={[
-            { rel: 'apple-touch-icon', sizes: '180x180', href: `${appleTouchIcon}` },
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '32x32',
-              href: `${favicon32}`,
-            },
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '16x16',
-              href: `${favicon16}`,
-            },
-            { rel: 'manifest', href: `${data.site.siteMetadata.title}` },
-            { rel: 'mask-icon', color: '#5bbad5', href: `${maskIcon}` },
           ]}
         >
           <html lang="en" />

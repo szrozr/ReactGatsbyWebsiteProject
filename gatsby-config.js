@@ -16,13 +16,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'puente-technology-and-design',
+        short_name: 'puente',
         start_url: '/',
         background_color: '#e2de00',
         theme_color: '#e2de00',
         display: 'minimal-ui',
-        icon: 'src/images/favicon/favicon-32x32.png', // This path is relative to the root of the site.
+        icon: 'src/images/puente-p.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
