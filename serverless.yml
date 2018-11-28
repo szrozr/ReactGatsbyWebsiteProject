@@ -138,7 +138,7 @@ custom:
       localDir: ./public
       params:
         - index.html:
-              CacheControl: 'no-cache'
+          CacheControl: 'public, max-age=0'
 
 plugins:
   - serverless-s3-sync

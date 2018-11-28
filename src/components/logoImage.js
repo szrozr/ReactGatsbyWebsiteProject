@@ -5,7 +5,7 @@ const LogoImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        image: file(relativePath: { eq: "images/puente-logo-2.svg" }) {
+        image: file(relativePath: { eq: "images/puente-logo.svg" }) {
           publicURL
         }
       }
