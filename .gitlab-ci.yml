@@ -17,8 +17,9 @@ develop:
   - npm install -g gatsby-cli
   - gatsby build
   - npm install -g serverless
+  - export SITENAME=$DEV_SITENAME
   - serverless config credentials --provider aws --key $AWS_KEY --secret $AWS_SECRET -n puente
-  - SITENAME=$DEV_SITENAME sls deploy -v
+  - sls deploy -v
   only:
   - master
   tags:
@@ -33,8 +34,9 @@ release:
   - npm install -g gatsby-cli
   - gatsby build
   - npm install -g serverless
+  - export SITENAME=$PROD_SITENAME
   - serverless config credentials --provider aws --key $AWS_KEY --secret $AWS_SECRET -n puente
-  - SITENAME=$PROD_SITENAME sls deploy -v --stage prod
+  - sls deploy -v --stage prod
   only:
   - master
   when: manual
