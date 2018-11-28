@@ -21,6 +21,8 @@ develop:
   - SITENAME=$DEV_SITENAME sls deploy -v
   only:
   - master
+  tags:
+  - shared
 
 release:
   stage: prod
@@ -36,3 +38,5 @@ release:
   only:
   - master
   when: manual
+  tags:
+  - shared
