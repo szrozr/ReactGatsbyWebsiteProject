@@ -1,0 +1,36 @@
+image: node:8.12
+
+stages:
+  - dev
+  - prod
+
+cache:
+  paths:
+  - node_modules/
+
+develop:
+  type: deploy
+  script:
+  - apt-get update && apt-get install nasm
+  - yarn install
+  - npm install -g gatsby-cli
+  - gatsby build
+  - npm install -g serverless
+  - serverless config credentials --provider aws --key $AWS_KEY --secret $AWS_SECRET -n puente
+  - SITENAME=$DEV_SITENAME sls deploy -v
+  only:
+  - master
+
+release:
+  type: deploy
+  script:
+  - apt-get update && apt-get install nasm
+  - yarn install
+  - npm install -g gatsby-cli
+  - gatsby build
+  - npm install -g serverless
+  - serverless config credentials --provider aws --key $AWS_KEY --secret $AWS_SECRET -n puente
+  - SITENAME=$PROD_SITENAME sls deploy -v --stage prod
+  only:
+  - master
+  when: manual
