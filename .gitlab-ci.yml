@@ -9,6 +9,7 @@ cache:
   - node_modules/
 
 develop:
+  stage: dev
   type: deploy
   script:
   - apt-get update && apt-get install nasm
@@ -22,6 +23,7 @@ develop:
   - master
 
 release:
+  stage: prod
   type: deploy
   script:
   - apt-get update && apt-get install nasm
