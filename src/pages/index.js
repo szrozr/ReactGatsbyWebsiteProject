@@ -34,6 +34,12 @@ class IndexPage extends React.PureComponent {
       <Layout>
         <div className="Index_LogoWrapper" style={{ height }}>
           <LogoImage />
+          <div className="Index_ContactUsWrapper">
+            <div className="Index_ContactUs">
+              For more information contact us at&nbsp;
+              <a href="mailto:info@puentedev.io">info@puentedev.io</a>
+            </div>
+          </div>
         </div>
       </Layout>
     );

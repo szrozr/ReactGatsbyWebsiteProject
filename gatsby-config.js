@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'assets',
+        path: `${__dirname}/src/assets`,
       },
     },
     'gatsby-transformer-sharp',
@@ -22,7 +22,7 @@ module.exports = {
         background_color: '#e2de00',
         theme_color: '#e2de00',
         display: 'minimal-ui',
-        icon: 'src/images/puente-p.svg', // This path is relative to the root of the site.
+        icon: 'src/assets/images/puente-p.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
