@@ -37,6 +37,7 @@
     "eslint-plugin-react": "^7.11.1",
     "gatsby-plugin-eslint": "^2.0.1",
     "prettier": "^1.15.2",
+    "serverless-plugin-cloudfront-lambda-edge": "^2.1.0",
     "serverless-s3-sync": "^1.7.1"
   },
   "repository": {

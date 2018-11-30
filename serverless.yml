@@ -27,11 +27,14 @@ provider:
 functions:
   index:
     handler: handlers/index.index
-    events:
-      - http:
-          path: /profile/{uuid}/{proxy+}
-          method: get
-          cors: true
+    # events:
+    #   - http:
+    #       path: /profile/{uuid}/{proxy+}
+    #       method: get
+    #       cors: true
+    lambdaAtEdge:
+      distribution: 'WebsiteDistribution'
+      eventType: 'origin-request'
 
 resources:
   Resources:
@@ -151,3 +154,4 @@ custom:
 
 plugins:
   - serverless-s3-sync
+  - serverless-plugin-cloudfront-lambda-edge
