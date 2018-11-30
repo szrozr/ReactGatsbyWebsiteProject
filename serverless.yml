@@ -138,7 +138,9 @@ resources:
 
 package:
   exclude:
-    - node_modules/**
+    - ./**
+  include:
+    - handlers/**
 
 custom:
   s3Bucket: ${self:service}-${opt:stage, self:provider.stage}
