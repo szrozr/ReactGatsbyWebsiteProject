@@ -52,7 +52,7 @@ module.exports.index = async (event) => {
         <script src="${url}/component---src-pages-index-js-1fbb9bcf35ebe93dc606.js" async=""></script>
     </body>
 </html>
-`, 200, {
+`, 200, false, {
     'Content-Type': 'text/html',
     'Access-Control-Allow-Origin': '*',
   });
