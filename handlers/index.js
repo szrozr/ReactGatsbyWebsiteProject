@@ -3,6 +3,7 @@ const { errorResponse, successResponse } = require('./utils');
 
 module.exports.index = async (event) => {
   console.log(event);
+  const url = 'https://dev-site.puentedev.io';
   return successResponse(`
   <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +30,7 @@ module.exports.index = async (event) => {
             <div style="outline:none" tabindex="-1" role="group">
                 <div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0">
                     <div class="Index_LogoWrapper" style="height:600px">
-                        <img class="LogoImage" src="/static/puente-logo-2cdbb018c739a2bb874efed453394f9d.svg" alt="Puente Logo"/>
+                        <img class="LogoImage" src="${url}/static/puente-logo-2cdbb018c739a2bb874efed453394f9d.svg" alt="Puente Logo"/>
                         <div class="Index_ContactUsWrapper">
                             <div class="Index_ContactUs">For more information contact us at 
                                 <a href="mailto:info@puentedev.io">info@puentedev.io</a>
@@ -45,10 +46,10 @@ module.exports.index = async (event) => {
         <script id="gatsby-chunk-mapping">/*
             <![CDATA[*/window.___chunkMapping={"app":["/app-1c8ddf60f0ad508c4a5a.js"],"component---src-pages-404-js":["/component---src-pages-404-js.a82bc48cfa31deea5b5f.css","/component---src-pages-404-js-73062b7c11adbcb48228.js"],"component---src-pages-index-js":["/component---src-pages-index-js.880680f89ee2b553b85d.css","/component---src-pages-index-js-1fbb9bcf35ebe93dc606.js"],"component---src-pages-page-2-js":["/component---src-pages-page-2-js.a82bc48cfa31deea5b5f.css","/component---src-pages-page-2-js-9c4e5de487a5f087e3f1.js"]};/*]]>*/
         </script>
-        <script src="/webpack-runtime-e1d8522d87107242b6ed.js" async=""></script>
-        <script src="/app-1c8ddf60f0ad508c4a5a.js" async=""></script>
-        <script src="/0-ba6c40f50b811c3cea0f.js" async=""></script>
-        <script src="/component---src-pages-index-js-1fbb9bcf35ebe93dc606.js" async=""></script>
+        <script src="${url}/webpack-runtime-e1d8522d87107242b6ed.js" async=""></script>
+        <script src="${url}/app-1c8ddf60f0ad508c4a5a.js" async=""></script>
+        <script src="${url}/0-ba6c40f50b811c3cea0f.js" async=""></script>
+        <script src="${url}/component---src-pages-index-js-1fbb9bcf35ebe93dc606.js" async=""></script>
     </body>
 </html>
 `, 200, {
