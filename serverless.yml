@@ -24,6 +24,15 @@ provider:
   region: us-east-1
   profile: puente
 
+functions:
+  index:
+    handler: handlers/index.index
+    events:
+      - http:
+          path: /profile/{uuid}/{proxy+}
+          method: get
+          cors: true
+
 resources:
   Resources:
     ## Specifying the S3 Bucket
