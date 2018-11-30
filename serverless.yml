@@ -33,8 +33,8 @@ functions:
     #       method: get
     #       cors: true
     lambdaAtEdge:
-      distribution: 'WebsiteDistribution'
-      eventType: 'origin-request'
+      distribution: 'WebAppCloudFrontDistribution'
+      eventType: 'viewer-response'
 
 resources:
   Resources:
