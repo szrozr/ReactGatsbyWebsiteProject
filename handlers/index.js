@@ -35,7 +35,7 @@ module.exports.index = async (event) => {
                     <div class="Index_LogoWrapper" style="height:600px">
                         <img class="LogoImage" src="${url}/static/puente-logo-2cdbb018c739a2bb874efed453394f9d.svg" alt="Puente Logo"/>
                         <div class="Index_ContactUsWrapper">
-                            <div class="Index_ContactUs">For more information contact us at 
+                            <div class="Index_ContactUs">For more information contact us at
                                 <a href="mailto:info@puentedev.io">info@puentedev.io</a>
                             </div>
                         </div>

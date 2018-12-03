@@ -154,7 +154,10 @@ custom:
   s3Sync:
     - bucketName: ${self:custom.s3Bucket}
       localDir: ./public
+  optimize: true
+
 
 plugins:
   - serverless-s3-sync
   - serverless-plugin-cloudfront-lambda-edge
+  - serverless-optimizer-plugin
