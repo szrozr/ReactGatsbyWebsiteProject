@@ -142,14 +142,9 @@ resources:
 
 package:
   exclude:
-    # - public/**
-    # - src/**
-    # - node_modules/**
     - ./**
   include:
     - handlers/**
-    - node_modules/node-html-parser/**
-    - node_modules/he/**
     - public/index.html
 
 custom:

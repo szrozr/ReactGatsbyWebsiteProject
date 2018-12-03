@@ -103,7 +103,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/puente-website/dev/1543864743364-2018-12-03T19:19:03.364Z/puente-website.zip"
+          "S3Key": "serverless/puente-website/dev/1543875661361-2018-12-03T22:21:01.361Z/puente-website.zip"
         },
         "FunctionName": "puente-website-dev-index",
         "Handler": "handlers/index.index",
@@ -122,14 +122,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms": {
+    "IndexLambdaVersionS2Beeis8EULVSa0VIPFwHtXxdh0Qvt03vhJbOv6WNk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "IndexLambdaFunction"
         },
-        "CodeSha256": "IfPY7mwW4geAakabVXslWD/sllqH8BKVcx0CsicgXVA="
+        "CodeSha256": "vdjXyWyr6dgDfqVuvrNcmreV6cATywIa+EAVsKs+yy0="
       }
     },
     "WebAppS3Bucket": {
@@ -216,7 +216,7 @@
               {
                 "EventType": "origin-response",
                 "LambdaFunctionARN": {
-                  "Ref": "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms"
+                  "Ref": "IndexLambdaVersionS2Beeis8EULVSa0VIPFwHtXxdh0Qvt03vhJbOv6WNk"
                 }
               }
             ]
@@ -255,7 +255,7 @@
     "IndexLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms"
+        "Ref": "IndexLambdaVersionS2Beeis8EULVSa0VIPFwHtXxdh0Qvt03vhJbOv6WNk"
       }
     },
     "WebAppCloudFrontDistributionOutput": {
