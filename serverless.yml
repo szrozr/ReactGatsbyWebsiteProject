@@ -35,7 +35,8 @@ functions:
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'viewer-response'
-    optimize: true
+    custom:
+      optimize: true
 
 resources:
   Resources:
