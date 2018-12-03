@@ -141,7 +141,8 @@ resources:
 
 package:
   exclude:
-    - ./**
+    - node_modules/**
+    - src/**
   include:
     - handlers/**
 
