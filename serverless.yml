@@ -35,6 +35,7 @@ functions:
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'origin-response'
+      # includeBody: true
 
 resources:
   Resources:
@@ -141,11 +142,15 @@ resources:
 
 package:
   exclude:
-    - node_modules/**
-    - src/**
+    # - public/**
+    # - src/**
+    # - node_modules/**
+    - ./**
   include:
     - handlers/**
-  individually: true
+    - node_modules/node-html-parser/**
+    - node_modules/he/**
+    - public/index.html
 
 custom:
   s3Bucket: ${self:service}-${opt:stage, self:provider.stage}

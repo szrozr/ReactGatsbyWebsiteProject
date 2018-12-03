@@ -5,6 +5,133 @@
     "ServerlessDeploymentBucket": {
       "Type": "AWS::S3::Bucket"
     },
+    "IndexLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/puente-website-dev-index"
+      }
+    },
+    "IamRoleLambdaExecution": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": [
+                  "lambda.amazonaws.com",
+                  "edgelambda.amazonaws.com"
+                ]
+              },
+              "Action": [
+                "sts:AssumeRole"
+              ]
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": {
+              "Fn::Join": [
+                "-",
+                [
+                  "dev",
+                  "puente-website",
+                  "lambda"
+                ]
+              ]
+            },
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "logs:CreateLogStream"
+                  ],
+                  "Resource": [
+                    {
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/puente-website-dev-index:*"
+                    }
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "logs:PutLogEvents"
+                  ],
+                  "Resource": [
+                    {
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/puente-website-dev-index:*:*"
+                    }
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "logs:CreateLogGroup",
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents",
+                    "logs:DescribeLogStreams"
+                  ],
+                  "Resource": "arn:aws:logs:*:*:*"
+                }
+              ]
+            }
+          }
+        ],
+        "Path": "/",
+        "RoleName": {
+          "Fn::Join": [
+            "-",
+            [
+              "puente-website",
+              "dev",
+              "us-east-1",
+              "lambdaRole"
+            ]
+          ]
+        }
+      }
+    },
+    "IndexLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/puente-website/dev/1543864743364-2018-12-03T19:19:03.364Z/puente-website.zip"
+        },
+        "FunctionName": "puente-website-dev-index",
+        "Handler": "handlers/index.index",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs8.10",
+        "Timeout": 6
+      },
+      "DependsOn": [
+        "IndexLogGroup",
+        "IamRoleLambdaExecution"
+      ]
+    },
+    "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "IndexLambdaFunction"
+        },
+        "CodeSha256": "IfPY7mwW4geAakabVXslWD/sllqH8BKVcx0CsicgXVA="
+      }
+    },
     "WebAppS3Bucket": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
@@ -65,6 +192,9 @@
             }
           ],
           "DefaultCacheBehavior": {
+            "DefaultTTL": "0",
+            "MaxTTL": "0",
+            "Compress": true,
             "AllowedMethods": [
               "DELETE",
               "GET",
@@ -81,7 +211,15 @@
                 "Forward": "none"
               }
             },
-            "ViewerProtocolPolicy": "redirect-to-https"
+            "ViewerProtocolPolicy": "redirect-to-https",
+            "LambdaFunctionAssociations": [
+              {
+                "EventType": "origin-response",
+                "LambdaFunctionARN": {
+                  "Ref": "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms"
+                }
+              }
+            ]
           },
           "ViewerCertificate": {
             "AcmCertificateArn": "arn:aws:acm:us-east-1:598147487617:certificate/94adfbb7-cf3f-4436-8e18-51446af45aa3",
@@ -112,6 +250,12 @@
     "ServerlessDeploymentBucketName": {
       "Value": {
         "Ref": "ServerlessDeploymentBucket"
+      }
+    },
+    "IndexLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "IndexLambdaVersionzNzAr6TPLDXVY7OVJcQsaHLOnfgKBfu59H4ANAVkms"
       }
     },
     "WebAppCloudFrontDistributionOutput": {

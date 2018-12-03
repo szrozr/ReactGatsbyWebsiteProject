@@ -16,6 +16,8 @@ develop:
   - yarn install
   - npm install -g gatsby-cli
   - gatsby build
+  - mkdir public/emailSignature
+  - cp src/assets/emailSignature/* public/emailSignature
   - npm install -g serverless
   - export SITE_NAME=$DEV_SITENAME
   - export DEFAULT_TTL=$DEV_DEFAULT_TTL
