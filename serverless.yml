@@ -35,6 +35,7 @@ functions:
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'viewer-response'
+    optimize: true
 
 resources:
   Resources:
@@ -154,7 +155,6 @@ custom:
   s3Sync:
     - bucketName: ${self:custom.s3Bucket}
       localDir: ./public
-  optimize: true
 
 
 plugins:
