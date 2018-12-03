@@ -35,7 +35,6 @@ functions:
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'origin-response'
-    optimize: true
 
 resources:
   Resources:
@@ -161,4 +160,3 @@ custom:
 plugins:
   - serverless-s3-sync
   - serverless-plugin-cloudfront-lambda-edge
-  - serverless-optimizer-plugin
