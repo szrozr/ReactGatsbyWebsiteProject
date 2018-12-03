@@ -34,9 +34,8 @@ functions:
     #       cors: true
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
-      eventType: 'viewer-response'
-    custom:
-      optimize: true
+      eventType: 'origin-response'
+    optimize: true
 
 resources:
   Resources:
@@ -147,6 +146,7 @@ package:
     - src/**
   include:
     - handlers/**
+  individually: true
 
 custom:
   s3Bucket: ${self:service}-${opt:stage, self:provider.stage}
