@@ -13,6 +13,7 @@
     "gatsby-plugin-sharp": "^2.0.12",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "node-html-parser": "^1.1.11",
     "node-sass": "^4.10.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
@@ -37,7 +38,6 @@
     "eslint-plugin-react": "^7.11.1",
     "gatsby-plugin-eslint": "^2.0.1",
     "prettier": "^1.15.2",
-    "serverless-optimizer-plugin": "^2.5.1",
     "serverless-plugin-cloudfront-lambda-edge": "^2.1.0",
     "serverless-s3-sync": "^1.7.1"
   },
