@@ -23,6 +23,7 @@ module.exports = {
         theme_color: '#e2de00',
         display: 'minimal-ui',
         icon: 'src/assets/images/puente-p.svg', // This path is relative to the root of the site.
+        width: '100%',
       },
     },
     'gatsby-plugin-sass',
