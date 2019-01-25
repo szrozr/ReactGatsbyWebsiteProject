@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  setLanguage,
   translate,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
@@ -55,6 +56,10 @@ class Contact extends React.Component {
   componentWillUnmount() {
   // window.removeEventListener('onselect', this.setComponentHeight);
   }
+
+  handleSetLanguage = key => () => {
+    setLanguage(key);
+  };
 
   changeHandler = (event) => {
     const { formControls } = this.state;
@@ -124,6 +129,15 @@ class Contact extends React.Component {
               activeId="iletisim"
               hand={handleClick}
             />
+          </div>
+          <div id="lang">
+            <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+            <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+            {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
           </div>
           <div
             className="contactContainer"

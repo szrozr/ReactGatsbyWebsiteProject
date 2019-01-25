@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  setLanguage,
   translate,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
@@ -18,6 +19,10 @@ class AboutUs extends React.Component {
   componentWillUnmount() {
   // window.removeEventListener('onselect', this.setComponentHeight);
   }
+
+  handleSetLanguage = key => () => {
+    setLanguage(key);
+  };
 
   render() {
     const {
@@ -53,6 +58,15 @@ class AboutUs extends React.Component {
               activeId="hakkimizda"
               hand={handle}
             />
+            <div id="lang">
+              <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+              <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+              {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+            </div>
           </div>
           <div
             style={{

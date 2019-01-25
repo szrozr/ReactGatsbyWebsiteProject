@@ -39,6 +39,14 @@ class Entrance extends React.Component {
           iletisim={iletisim}
           activeId=""
         />
+        <div id="lang">
+          <a href="/tr" className="langpass">TR </a>
+          <a href="/en" className="langpass">/ ENG</a>
+          {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+        </div>
         <div id="animationdiv"><img id="peunteanimation" src={puenteAnimation} alt="" /></div>
       </div>
     );
