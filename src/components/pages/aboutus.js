@@ -1,20 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
   translate,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
-import NavBar from '../components/NavBar';
-import AboutusLogo from '../components/aboutus-images/aboutuslogo';
-import Gorilla from '../components/aboutus-images/gorillaimage';
-import tr from '../components/language/tr.json';
-import en from '../components/language/en.json';
-import '../components/NavBar.scss';
-import '../styles/aboutus.scss';
+import NavBar from '../NavBar';
+import AboutusLogo from '../aboutus-images/aboutuslogo';
+import Gorilla from '../aboutus-images/gorillaimage';
+import '../NavBar.scss';
+import '../../styles/aboutus.scss';
 
 class AboutUs extends React.Component {
   componentDidMount() {

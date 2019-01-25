@@ -1,18 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
   translate,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
-import NavBar from '../components/NavBar';
+import NavBar from '../NavBar';
 
-import Gorilla from '../components/software-images/software-goril';
-import SoftwareLogo from '../components/software-images/software-logo';
-import '../styles/software.scss';
+import Gorilla from '../software-images/software-goril';
+import SoftwareLogo from '../software-images/software-logo';
+import '../../styles/software.scss';
 
 
 class Software extends React.Component {
@@ -88,7 +84,7 @@ Software.propTypes = {
   yazilim: PropTypes.string.isRequired,
   hakkimizda: PropTypes.string.isRequired,
   iletisim: PropTypes.string.isRequired,
-  isVisible: PropTypes.func.isRequired,
+  isVisible: PropTypes.bool.isRequired,
   handle: PropTypes.func.isRequired,
   pagetransition: PropTypes.bool.isRequired,
   onleave: PropTypes.bool.isRequired,

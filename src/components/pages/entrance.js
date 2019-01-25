@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import puenteAnimation from '../assets/images/entranceimages/puenteanimation2.gif';
-import NavBar from '../components/NavBar';
+import puenteAnimation from '../../assets/images/entranceimages/puenteanimation2.gif';
+import NavBar from '../NavBar';
 
 const bool = true;
 
@@ -45,13 +45,17 @@ class Entrance extends React.Component {
   }
 }
 
+Entrance.defaultProps = {
+  isVisible: false,
+};
+
 Entrance.propTypes = {
   tasarim: PropTypes.string.isRequired,
   yazilim: PropTypes.string.isRequired,
   hakkimizda: PropTypes.string.isRequired,
   iletisim: PropTypes.string.isRequired,
   handle: PropTypes.func.isRequired,
-  isVisible: PropTypes.bool.isRequired,
+  isVisible: PropTypes.bool,
   pagetransition: PropTypes.bool.isRequired,
   onleave: PropTypes.bool.isRequired,
 };

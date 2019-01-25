@@ -34,6 +34,20 @@ div:nth-child(3) {
   top:1%;
   right:1%;}
 
+  // anchor tag version
+
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+
+  //button version
+
   .langpass{
     border: none;
     background: none;
@@ -74,13 +88,16 @@ div:nth-child(3) {
 }
 
 .fp-tableCell>div:nth-child(1){
-  height: 99%;
+  height: 99.75%;
   border: 0.09px solid white;
 }
 
 #animationdiv{
   margin-top: 20%;
+  width: 100%;
+  height: 30%;
   text-align: center;
+//border: 1px solid red;
 }
 
 #gorilanimation{

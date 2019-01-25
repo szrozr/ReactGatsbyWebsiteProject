@@ -1,22 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
   translate,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
-import TextInput from '../components/TextInput';
-import TextArea from '../components/Textarea';
-import NavBar from '../components/NavBar';
-import Logo from '../components/plogo';
-import '../styles/design.scss';
-import '../styles/software.scss';
-import DesignGorilla from '../components/design-images/design-gorilla';
-import Adobe from '../components/design-images/adobe';
-import SubLogo from '../components/design-images/designlogo';
+import NavBar from '../NavBar';
+import '../../styles/design.scss';
+import '../../styles/software.scss';
+import DesignGorilla from '../design-images/design-gorilla';
+import SubLogo from '../design-images/designlogo';
 
 class Design extends React.Component {
   componentDidMount() {

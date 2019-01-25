@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import PropTypes from 'prop-types';
-import Map from '../components/contactus-images/maplocation';
+import Map from '../contactus-images/maplocation';
 
 const AnyReactComponent = ({ text }) => <div id="mapicon"><Map /></div>;
 
