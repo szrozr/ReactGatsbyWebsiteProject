@@ -48,7 +48,7 @@ AnyReactComponent.propTypes = {
 };
 
 SimpleMap.propTypes = {
-  center: PropTypes.shape,
+  center: PropTypes.shape(),
   zoom: PropTypes.number,
 };
 

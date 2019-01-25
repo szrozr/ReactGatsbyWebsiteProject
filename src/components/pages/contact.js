@@ -12,7 +12,7 @@ import Fax from '../contactus-images/fax';
 import Web from '../contactus-images/web';
 import Mail from '../contactus-images/mail';
 import '../../styles/contactus.scss';
-import Map from './mapdeneme';
+import Map from './map';
 
 class Contact extends React.Component {
   state = {
