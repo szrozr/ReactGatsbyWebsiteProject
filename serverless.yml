@@ -24,6 +24,7 @@ provider:
   region: us-east-1
   profile: puente
 
+<<<<<<< HEAD
 functions:
   index:
     handler: handlers/index.index
@@ -31,6 +32,8 @@ functions:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'origin-response'
 
+=======
+>>>>>>> master
 resources:
   Resources:
     ## Specifying the S3 Bucket
@@ -84,9 +87,12 @@ resources:
               ResponseCode: 200
               ResponsePagePath: /index.html
           DefaultCacheBehavior:
+<<<<<<< HEAD
             DefaultTTL: ${env:DEFAULT_TTL} # in seconds
             MaxTTL: ${env:DEFAULT_TTL} # in seconds
             Compress: true
+=======
+>>>>>>> master
             AllowedMethods:
               - DELETE
               - GET
@@ -136,10 +142,14 @@ resources:
 
 package:
   exclude:
+<<<<<<< HEAD
     - ./**
   include:
     - handlers/**
     - public/index.html
+=======
+    - node_modules/**
+>>>>>>> master
 
 custom:
   s3Bucket: ${self:service}-${opt:stage, self:provider.stage}
@@ -149,8 +159,17 @@ custom:
   s3Sync:
     - bucketName: ${self:custom.s3Bucket}
       localDir: ./public
+<<<<<<< HEAD
 
 
 plugins:
   - serverless-s3-sync
   - serverless-plugin-cloudfront-lambda-edge
+=======
+      params:
+        - index.html:
+          CacheControl: 'max-age=0'
+
+plugins:
+  - serverless-s3-sync
+>>>>>>> master

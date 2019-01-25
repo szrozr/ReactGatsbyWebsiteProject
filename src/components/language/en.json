@@ -1,0 +1,31 @@
+{
+  "home": {
+    "title": "Homepage"
+  },
+  "hello": "Hello {name}!",
+  "Index_ContactUs": "For more information contact us at",
+  "tasarim": "Design",
+  "yazilim": "Software",
+  "hakkimizda": "About us",
+  "iletisim": "Contact us",
+  "design": {
+    "paragraf1": "As <span class=\"Heliotrope\">Puente</span>, we know that your products job isn't to be pretty, but it has to have the power to convert.",
+    "paragraf2": "<span class=\"CarrotOrange\">We create interface designs according to your needs.</span> Instead of the replicating designs that already exist, we offer you unique and alternative design options. By analyzing tested, original design solutions and methods we <span class=\"RadicalRed\">bring all our User Experience and Market Research experience to create something powerful according to your business plan and target audience.</span>",
+    "paragraf3": "We integrate interactive solutions with our <span class=\"InchWorm\">talented designers and experienced engineers working together for maximum quality and efficiency.</span>",
+    "paragraf4": "What distinguishes you from your competitors will be our approach to your project as <span class=\"Viking\">Puente.</span>"
+  },
+  "software": {
+    "paragraf1": "We at <span class=\"Corn\">Puente</span> develop both our own projects and tender projects with the long-term connections we’ve built from years of working together, without compromising this vision we have. While we do this, we aim to work with latest technologies and methods that have always proved themselves.",
+    "paragraf2": "At the moment our projects include, using the <span class=\"CarrotOrange\">“Internet of Things”</span> and <span class=\"Corn\">“Machine Learning”</span> methods for problem solving, designing and bringing to life web and mobile applications that are <span class=\"Mulberry\">focused</span> on user experience and building complex <span class=\"BostonBlue\">infrastructure architectures.</span>",
+    "paragraf3": "While in one hand we are developing tender-based projects for the development of the company, in the other hand we are developing an environment in which creativity flows, every idea is valued and ideas aren’t left as ideas, but rather brought to life with <span class=\"Viking\">realistic</span> assessment and planning."
+  },
+  "aboutus": {
+    "paragraf1": "<span class=\"CarrotOrange\">Puente</span> is a work vision focused on human development. For us, the correct scale of the success of the company is how much we can change people’s lives. We, here at Puente, believe that while we work with this vision everything else will happen. This vision begins with the working environment we provide for our employees.",
+    "paragraf2": "<span class=\"Viking\">Instead of being swayed by the market exchange rate or the economic situation around us; we are determined to create a company foundation that will allow us to grow by leading strongly, ambitiously and courageously.</span> <span class=\"Heliotrope\">We want to be a company that openly and constantly learns new technologies and</span> transforms learning and progress into a general way of working as a team, standing against any sort of schemes made with the purpose of profit and other wrong doings that the market accepts as ‘normal.’ We want to be a company that shows that the good will always win.",
+    "paragraf3": "We know that this vision start with the working environment. Puente employees are aware that vision is focused on them. They continue loving their job even when faced with difficulties and hardships. Because they know that hardships create endurance. And endurance allows to become a competent and mature artist and/or engineer that lacks nothing. <span class=\"CeriseRed\">For this to be possible, everyone is taught to think of their teammates before thinking of themselves.</span>"
+  },
+  "contact": {
+    "paragraf1": "At Puente <span class=\"Mulberry\">we don’t keep track</span> of mistakes or short-comings. But we <span class=\"CarrotOrange\">celebrate every success</span>. So, you don’t need to compete with others in order to prove yourself or you don’t need to compare yourself with others. You can work <span class=\"Viking\">freely</span>, knowing that others want you to excel. You won’t be afraid of asking questions, being criticized, or making mistakes because you will know that <span class=\"InchWorm\">everybody’s sole purpose</span> is for you to grow.",
+    "paragraf2": "Our purpose is for people to experience life, abundant life as we build a <span class=\"Mulberry\">bridge between</span> developing technologies and a developing Turkey."
+  }
+}
