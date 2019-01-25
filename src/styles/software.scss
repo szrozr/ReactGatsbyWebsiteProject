@@ -3,7 +3,7 @@
   display: inline-block;
   margin-left: 19%;
   width: 150%;
-//  border: 1px solid green;
+ // border: 1px solid green;
 }
 
 .software{
@@ -48,13 +48,15 @@
     #softwareinlinecontainer{
       display: inline-block;
       margin-left: 10%;
-     // border: 1px solid red;
+    //  border: 1px solid blue;
+
+      width: 171vw;
     }
 
     #softwaregorilladiv{
       float: left;
       width: 102%;
-    //  border: 1px solid red;
+     //  border: 1px solid red;
       padding: 0;
       height: 55%;
     }
