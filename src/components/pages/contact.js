@@ -136,11 +136,6 @@ class Contact extends React.Component {
           >
             <div className="contactinlinecontainer">
               <div className="paragraf">
-                <div className="contact" id="contacth1">
-                &lt;h1&gt;
-                  {t('contact.baslik')}
-                 &lt;/h1&gt;
-                </div>
                 <p className="contactusp ilksatir">
                 &emsp;
                 &emsp;

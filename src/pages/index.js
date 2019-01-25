@@ -165,21 +165,57 @@ class IndexPage extends React.Component {
                     <TrackVisibility>
                       <Design icerik={t('design.Heliotrope')} tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={designleave} logovisibility={bool} />
                     </TrackVisibility>
+                    <div id="lang">
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+                      {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+                    </div>
                   </div>
                   <div className="section">
                     <TrackVisibility>
                       <Software tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={designleave} logovisibility={bool} />
                     </TrackVisibility>
+                    <div id="lang">
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+                      {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+                    </div>
                   </div>
                   <div className="section">
                     <TrackVisibility>
                       <AboutUs tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={aboutusleave} logovisibility={bool} />
                     </TrackVisibility>
+                    <div id="lang">
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+                      {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+                    </div>
                   </div>
                   <div className="section">
                     <TrackVisibility>
                       <Contact tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={contactleave} logovisibility={bool} />
                     </TrackVisibility>
+                    <div id="lang">
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
+                      &nbsp;
+                      <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+                      {/* <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('tr')}>TR</button>
+                      <button className="langpass" type="button"
+                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+                    </div>
                   </div>
                 </React.Fragment>
               </ReactFullpage.Wrapper>

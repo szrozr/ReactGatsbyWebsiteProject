@@ -51,11 +51,13 @@ div:nth-child(3) {
   .langpass{
     border: none;
     background: none;
+    padding: 0;
   }
   .langpass:hover{
     border: none;
     text-decoration: underline;
     background: none;
+    cursor: pointer;
   }
 
   .langpass:focus{
