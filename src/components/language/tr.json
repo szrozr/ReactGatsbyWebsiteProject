@@ -10,9 +10,9 @@
   "iletisim": "İletişim",
   "design": {
     "baslik": "tasarım",
-    "paragraf1": "İnsanlar sevdikleri yazılımı kullanır. Tasarımların kullanıcıyı dönüştürme ve harekete geçirme gücüne sahip olması gerekir. Bizler bunun farkında olarak heyecan ve güven duygusu yaratan tasarımlar oluşturuyoruz çünkü zaten bizler de öyle uygulamalar kullanmayı seviyoruz.",
-    "paragraf2": "Var olan tasarımları kopyalamak yerine, ihtiyaçlarınıza ve hedef kitlenize göre benzersiz, alternatif kullanıcı deneyimleri tasarlıyor ve üretiyoruz.",
-    "paragraf3": "Bizler Puente’de, yeni şeyler deneme ve farklı düşünme özgürlüğünün olduğu, insan odaklı bir ortam yarattık. Sizler de bizimle çalıştığınızda bu temelden gelen tutku ve yaratıcılığı tecrübe edeceksiniz."
+    "paragraf1": "İnsanlar sevdikleri yazılımı <span class=\"Corn\">kullanır</span>. Tasarımların kullanıcıyı dönüştürme ve harekete geçirme gücüne sahip olması gerekir. Bizler bunun farkında olarak <span class=\"Viking\">heyecan ve güven</span> duygusu yaratan tasarımlar oluşturuyoruz çünkü zaten bizler de öyle uygulamalar kullanmayı seviyoruz.",
+    "paragraf2": "Var olan tasarımları kopyalamak yerine, ihtiyaçlarınıza ve hedef kitlenize göre <span class=\"RadicalRed\">benzersiz</span>, alternatif kullanıcı deneyimleri tasarlıyor ve üretiyoruz.",
+    "paragraf3": "Bizler Puente’de, <span class=\"CarrotOrange\">yeni şeyler deneme ve farklı düşünme özgürlüğünün olduğu</span>, insan odaklı bir ortam yarattık. Sizler de bizimle çalıştığınızda bu temelden gelen tutku ve yaratıcılığı tecrübe edeceksiniz."
   },
   "software": {
     "baslik": "yazılım",

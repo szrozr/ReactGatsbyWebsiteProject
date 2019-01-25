@@ -10,9 +10,9 @@
   "iletisim": "Contact us",
   "design": {
     "baslik": "design",
-    "paragraf1": "People use the software they love.  We create beautiful applications and websites that create a sense of excitement and confidence, because that’s the kind of software we ourselves love to use.",
-    "paragraf2": "Instead of simply replicating designs that already exist, we design and build unique, alternative user experiences according to your needs and your target audience.",
-    "paragraf3": "At Puente, we’ve created an environment where people come first, where we celebrate the freedom to try new things and think differently.  That environment has birthed passion and creativity, and that is what you will experience when you work with us."
+    "paragraf1": "People use the software they <span class=\"Corn\">love</span>.  We create beautiful applications and websites that create a sense of <span class=\"Viking\">excitement and confidence</span>, because that’s the kind of software we ourselves love to use.",
+    "paragraf2": "Instead of simply replicating designs that already exist, we design and build <span class=\"RadicalRed\">unique</span>, alternative user experiences according to your needs and your target audience.",
+    "paragraf3": "At Puente, we’ve created an environment where people come first, where we celebrate <span class=\"CarrotOrange\">the freedom to try new things and think differently</span>.  That environment has birthed passion and creativity, and that is what you will experience when you work with us."
   },
   "software": {
     "baslik": "software",
@@ -21,7 +21,7 @@
     "paragraf3": "While in one hand we are developing tender-based projects for the development of the company, in the other hand we are developing an environment in which creativity flows, every idea is valued and ideas aren’t left as ideas, but rather brought to life with <span class=\"Viking\">realistic</span> assessment and planning."
   },
   "aboutus": {
-    "baslik": "aboutus",
+    "baslik": "about us",
     "paragraf1": "<span class=\"CarrotOrange\">Puente</span> is a work vision focused on human development. For us, the correct scale of the success of the company is how much we can change people’s lives. We, here at Puente, believe that while we work with this vision everything else will happen. This vision begins with the working environment we provide for our employees.",
     "paragraf2": "<span class=\"Viking\">Instead of being swayed by the market exchange rate or the economic situation around us; we are determined to create a company foundation that will allow us to grow by leading strongly, ambitiously and courageously.</span> <span class=\"Heliotrope\">We want to be a company that openly and constantly learns new technologies and</span> transforms learning and progress into a general way of working as a team, standing against any sort of schemes made with the purpose of profit and other wrong doings that the market accepts as ‘normal.’ We want to be a company that shows that the good will always win.",
     "paragraf3": "We know that this vision start with the working environment. Puente employees are aware that vision is focused on them. They continue loving their job even when faced with difficulties and hardships. Because they know that hardships create endurance. And endurance allows to become a competent and mature artist and/or engineer that lacks nothing. <span class=\"CeriseRed\">For this to be possible, everyone is taught to think of their teammates before thinking of themselves.</span>"

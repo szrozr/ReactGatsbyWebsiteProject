@@ -1,0 +1,36 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import TrackVisibility from 'react-on-screen';
+import '../styles/visibilitydeneme.scss';
+
+const ComponentToTrack = ({ isVisible }) => {
+  let clasName = 'kutu';
+  if (isVisible) {
+    clasName = 'kutu2';
+  }
+  return (
+    <React.Fragment>
+      <div className={clasName}>Hello</div>
+    </React.Fragment>
+  );
+};
+
+const YourApp = () => {
+  return (
+    <React.Fragment>
+      <TrackVisibility>
+        <ComponentToTrack />
+      </TrackVisibility>
+    </React.Fragment>
+  );
+};
+
+export default YourApp;
+
+ComponentToTrack.defaultProps = {
+  isVisible: false,
+};
+
+ComponentToTrack.propTypes = {
+  isVisible: PropTypes.bool,
+};
