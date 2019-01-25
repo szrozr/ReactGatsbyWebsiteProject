@@ -1,0 +1,230 @@
+#contactuslogo{
+  position:absolute;
+  top: 2%;
+  left:0;
+  width: 1.5em;
+  height: 1.6em;
+}
+
+.forminput{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.5px solid #969CA0;
+
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  width: 26em;
+}
+
+.forminput:focus{
+  outline: none;
+}
+
+.contactUsForm{
+  color: #969CA0;
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1em;
+}
+
+.formrow{
+  width: 100%;
+  display: flex;
+  margin-top: 1vh;
+}
+
+#mesaj{
+  width: 53.35em !important; 
+  padding: 0 0 5% 0;
+}
+
+#ilksatir{
+  display: flex;
+  // margin-top:  14vh;
+  // margin-left: 15vw;
+}
+
+.satir{
+  // margin-left: 15vw;
+  margin-top: 1%;
+  display: flex;
+}
+
+.satir2{
+  // margin-left: 15vw;
+  margin-top: -1.6%;
+  display: flex;
+}
+
+.location{
+  margin-top: 1%;
+}
+
+.address{
+font-family: Space Mono;
+font-style: normal;
+font-weight: normal;
+line-height: 3.65vh;
+font-size: 0.8em;
+}
+
+ #phonenumber{
+   margin-top: 1vh;
+ }
+
+ textarea{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.5px solid #969CA0;
+
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  width: 25vw;
+
+  resize: none;
+ }
+
+ textarea:focus{
+   outline: none;
+ }
+
+ #mail{
+   margin-top: 14.9%;
+ }
+
+ #sendbutton{
+  font-family: Space Mono;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 1.08vw;
+letter-spacing: 0.1em;
+
+  color: #969CA0;
+  margin-top: 1vh;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  width: 14.5vw;
+ }
+
+ #sendbutton:focus{
+   outline: none;
+ }
+
+ #buttondiv{
+   padding-top: .1vh;
+ }
+
+ #map{
+   //margin-top: 5vh;
+   margin-right: 0;
+   margin-left: 0;
+   width: 100%;
+   margin-bottom: 0vh;
+ }
+
+ // yeni renkler
+ .Mulberry{
+  color: #CD537C;
+ }
+
+ // yeni
+ .contact{  
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 1.9vw;
+   color: #EF8F20;
+ }
+ 
+ .contactContainer{
+  margin-top: 0;
+ // border: 1px solid blue;
+  display: flex;
+ }
+
+ .contactinlinecontainer{
+   margin-top: 10%;
+   margin-left: 7%;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .contactusp{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1.6vmin;
+  text-align: justify;
+  margin-top: 1vh;
+ }
+
+ .paragraf{
+   margin-left: 5%;
+   padding-right: 1.9%;
+   width: 51.9%;
+   display: inline-block;
+   box-sizing: border-box;
+  // border: 1px solid red;
+ }
+
+ .paragraf .ilksatir{
+   margin-top: 2.5%;
+ }
+
+ .adresbilgileri{
+   margin-top: 1%;
+   margin-left: 9%;
+   color: #969CA0;
+   // border: 1px solid red;
+   width: 20%;
+   display: inline-block; 
+   padding: 0;
+   box-sizing: border-box;
+   height: 29vh;
+ }
+
+ .adresbilgileri .baslik{
+   color: #969CA0;
+   font-family: Space Mono;
+ }
+
+ .adresbilgileri .sembol{
+   display: inline-block;
+   flex-direction: row;
+   // border: 1px solid red;
+ }
+
+ .adresbilgileri .flex{
+   margin-top: 3%;
+   display: flex;
+   height: 1%;
+ }
+
+ .adresbilgileri .icerik{
+  font-family: Space Mono;
+  font-size: 1.6vmin;
+ }
+
+ .adresbilgileri .block{
+   display: inline-block;
+ }
+
+ .adresbilgileri .fa{
+   margin-top: 5%;
+ }
+
+ #mapicon{
+   width: 2vw;
+ }
+ 

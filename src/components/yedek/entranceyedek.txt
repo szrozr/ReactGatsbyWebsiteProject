@@ -1,0 +1,18 @@
+<div className="section">
+  <div id="animationdiv"><img id="peunteanimation" src={puenteAnimation} alt="puenteanimation" /></div>
+  <div>
+                      <NavBar
+                        isFooter={bool}
+                        tasarim={t('tasarim')}
+                        yazilim={t('yazilim')}
+                        hakkimizda={t('hakkimizda')}
+                        iletisim={t('iletisim')}
+                        activeId=""
+                      />
+                    </div>
+  <div id="lang">
+                      <button className="langpass" type="button" onClick={this.handleSetLanguage('tr')}>TR</button>
+            /
+                      <button className="langpass" type="button" onClick={this.handleSetLanguage('en')}>EN</button>
+                    </div>
+</div>;

@@ -1,5 +1,10 @@
 @import "./fonts";
 
+
+
+div:nth-child(3) {
+ max-width: 100%;
+}
 .Index_LogoWrapper {
   display: flex;
   justify-content: center;
@@ -21,9 +26,32 @@
   align-items: center;
   text-align: center;
 }
+
+#lang{
+  font-size: 0.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  position:absolute;
+  top:1%;
+  right:1%;}
+
+  .langpass{
+    border: none;
+    background: none;
+  }
+  .langpass:hover{
+    border: none;
+    text-decoration: underline;
+    background: none;
+  }
+
+  .langpass:focus{
+    outline: none;
+    background: none;
+  }
+
+
 .Index_ContactUs {
   opacity: 0;
-  animation: .5s ease-in 1.5s appear 1 forwards;
   font-family: 'Space Mono', monospace;
   color: #5F5F5F;
   font-size: 12px;
@@ -43,4 +71,22 @@
   to {
     opacity: 1;
   }
+}
+
+.fp-tableCell>div:nth-child(1){
+  height: 99%;
+  border: 0.09px solid white;
+}
+
+#animationdiv{
+  margin-top: 20%;
+  text-align: center;
+}
+
+#gorilanimation{
+  position: absolute;
+  width: 120vw;
+  height: 96vh;
+  top: 4vh;
+  left: -31vw;
 }

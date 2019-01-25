@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+// colors' names
+$abbey: #58595B;
+$mercury: #E5E5E5;
+$white: #FFF;
+$corn: #DFDC02;
+$regent-gray: #969CA0;
+$mine-shaft: #2C2C2C;
+$mulberry: #CD537C;
+$viking: #66CDDB;
+$inch_worm: #A3E22C;
+
+// colors' roles
+$primary: $corn;
+
+$dark: $abbey;
+$light: $white;
+
+$text-color:$regent-gray;
+
+$light-bg: $mercury;            
+$dark-bg: $mine-shaft;
+
+// spacing 
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 24px;
+$spacing-xlg: 35px;
+
+// fonts size
+$font-size-xsm: 8px;
+$font-size-sm: 12px;
+$font-size-regular: 16px;
+$font-size-lg: 18px;
+$font-size-xlg: 24px;
+
+// fonts 
+$primary-font: 'Space Mono', monospace;
+$header-font: 'Source Code Pro', monospace;
+$nav-bar-font: 'Sansation';
+
+@font-face {
+  font-family: 'Sansation';
+  src: url("/src/assets/fonts/sansation/Sansation-Regular.ttf");
+ }
+
+ @font-face {
+  font-family: "Sansation";
+  src: url("/src/assets/fonts/sansation/Sansation-Bold.ttf");
+  font-weight: bold;
+ }
+
+ @font-face {
+  font-family: "Sansation";
+  src: url("/src/assets/fonts/sansation/Sansation-Italic.ttf");
+  font-style: italic;
+ }
+ 
+
+ @font-face {
+  font-family: "Sansation";
+  src: url("/src/assets/fonts/sansation/Sansation-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+ }
+
+
+ @font-face {
+  font-family: "Sansation";
+  src: url("/src/assets/fonts/sansation/Sansation-Light.ttf");
+  font-weight: lighter;
+ }
+
+ @font-face {
+  font-family: "Sansation";
+  src: url("/src/assets/fonts/sansation/Sansation-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+ }

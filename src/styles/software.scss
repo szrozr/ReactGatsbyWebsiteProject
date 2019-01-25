@@ -1,0 +1,80 @@
+.softwareGoril{
+  border: 1px solid white;
+  display: inline-block;
+  margin-left: 19%;
+  width: 150%;
+ // border: 1px solid red;
+}
+
+.software{
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 1.9vw;
+  
+  color: #CD537C;
+  }
+
+  .softwareContainer{
+    margin-top: 12%;
+    width: 92vw;
+    align-self: center;
+    margin-left: 0;
+    display: flex;
+    // border: 1px solid blue;
+  }
+
+  .softwarep{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1.6vmin;
+    text-align: justify;
+    margin-top: 1vh;
+    }
+
+    .Amaranth{
+      color: #F12359;
+    }
+
+    .softwareLogo{
+      margin-left: 6%;
+      margin-top: 0vh;
+      width: 46vw;
+    }
+
+    #softwareinlinecontainer{
+      display: inline-block;
+      margin-left: 10%;
+    }
+
+    #softwaregorilladiv{
+      float: left;
+      width: 102%;
+     // border: 1px solid red;
+      padding: 0;
+      height: 55%;
+    }
+
+    // renkler
+.CarrotOrange{
+  color: #EF8F20;
+}
+
+.Corn{
+  color: #DFDC02;
+}
+
+.Mulberry{
+  color: #CD537C;
+}
+
+.BostonBlue{
+  color: #3280C2;
+}
+
+.InchWorm{
+  color: #A3E22C;
+}

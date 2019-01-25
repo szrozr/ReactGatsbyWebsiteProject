@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import ReactFullpage from '@fullpage/react-fullpage';
+
 
 import './layout.css';
 
@@ -30,8 +32,7 @@ const Layout = ({ children }) => (
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
+            padding: '0px',
             paddingTop: 0,
           }}
         >
