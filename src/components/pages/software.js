@@ -55,7 +55,11 @@ class Software extends React.Component {
         >
           <div id="softwaregorilladiv"><Gorilla /></div>
           <div id="softwareinlinecontainer">
-            <div className="software" id="softwareh1">&lt;h1&gt;yazılım&lt;/h1&gt;</div>
+            <div className="software" id="softwareh1">
+            &lt;h1&gt;
+              {t('software.baslik')}
+            &lt;/h1&gt;
+            </div>
             <p className="softwarep">
               <br />
               &emsp;

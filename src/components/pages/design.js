@@ -57,7 +57,11 @@ class Design extends React.Component {
           >
             <div id="designgorilladiv"><DesignGorilla /></div>
             <div id="designinlinecontainer">
-              <div className="tasarim" id="tasarimh1">&lt;h1&gt;tasarım&lt;/h1&gt;</div>
+              <div className="tasarim" id="tasarimh1">
+                &lt;h1&gt;
+                {t('design.baslik')}
+                 &lt;/h1&gt;
+              </div>
               <p className="designp">
                 <br />
               &emsp;
@@ -70,10 +74,6 @@ class Design extends React.Component {
               <p className="designp">
               &emsp;
                 {ReactHtmlParser(t('design.paragraf3'))}
-              </p>
-              <p className="designp">
-              &emsp;
-                {ReactHtmlParser(t('design.paragraf4'))}
               </p>
               <div className="bottomLogo">
                 <SubLogo />

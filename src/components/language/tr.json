@@ -9,22 +9,25 @@
   "hakkimizda": "Hakkımızda",
   "iletisim": "İletişim",
   "design": {
-    "paragraf1": "<span class=\"Heliotrope\">Puente</span> olarak yazılımlarımızın kullanıcılarla buluşmadan önce, doğru tasarım ile optimize bir şekilde tamamlanması gerektiğinin farkındayız.",
-    "paragraf2": "<span class=\"CarrotOrange\">Fonksiyonel tasarım, fonksiyonel düşünme gerektirir.</span> Denenmemiş, özgün tasarım ve çözüm yöntemlerini  iş planınıza ve hedef kitlenize göre analiz edip,  projelerinizi en iyi yansıtacak şekilde geliştiriyoruz. <span class=\"RadicalRed\">Deneyimli kadromuz ile hareketlendirilmiş ve etkileşimli çözümleri optimal bir şekilde entegre ediyoruz.</span>",
-    "paragraf3": "Kullanmak istediğiniz yazılımlar için arayüz tasarımlarını ihtiyaçlarınıza göre uyguluyoruz. Hazır, birbirinin tekrarı tasarımların aksine, karakterli, arayüz yazılımlarının tüm olanaklarını kullanarak <span class=\"InchWorm\"> sizlere özgün ve alternatif seçenekler sunuyoruz.</span>",
-    "paragraf4": "Sizi rakiplerinizden ayıran özellik, <span class=\"Viking\"> Puente</span> olarak projenize yaklaşım biçimimiz olacaktır."
+    "baslik": "tasarım",
+    "paragraf1": "İnsanlar sevdikleri yazılımı kullanır. Tasarımların kullanıcıyı dönüştürme ve harekete geçirme gücüne sahip olması gerekir. Bizler bunun farkında olarak heyecan ve güven duygusu yaratan tasarımlar oluşturuyoruz çünkü zaten bizler de öyle uygulamalar kullanmayı seviyoruz.",
+    "paragraf2": "Var olan tasarımları kopyalamak yerine, ihtiyaçlarınıza ve hedef kitlenize göre benzersiz, alternatif kullanıcı deneyimleri tasarlıyor ve üretiyoruz.",
+    "paragraf3": "Bizler Puente’de, yeni şeyler deneme ve farklı düşünme özgürlüğünün olduğu, insan odaklı bir ortam yarattık. Sizler de bizimle çalıştığınızda bu temelden gelen tutku ve yaratıcılığı tecrübe edeceksiniz."
   },
   "software": {
+    "baslik": "yazılım",
     "paragraf1":"Bizler Puente’de insan gelişimine odaklı ve kaliteli çözümler üretme vizyonundan ödün vermeden hem kendi fikirlerimizden hem de yıllarca birlikte çalışarak inşa ettiğimiz bağlantılarla birlikte projeler geliştiriyoruz. Bunu yaparken her zaman kendini kanıtlamış son teknoloji ve yöntemlerle çalışmakta kararlıyız.",
     "paragraf2": "Şu anda <span class=\"CarrotOrange\">’Internet of Things’’</span> ve <span class=\"Corn\">‘’Machine Learning’’</span> yöntemleriyle çözümler üretme, kullanıcı tecrübesi odaklı <span class=\"Mulberry\">Web</span> ve <span class=\"BostonBlue\">Mobil</span> uygulamalar tasarlayıp hayata geçirme ve karmaşık <span class=\"InchWorm\">altyapı mimarileri</span> inşa etme çalışmalarımız mevcuttur.",
     "paragraf3": "Bir yandan şirket gelişimi için taşeron projeler geliştirirken bir yandan da o projeler için yaratıcılığın aktığı, her fikrin değerlendirildiği, konuşmaların lafta kalmadığı, aksine <span class=\"Viking\">gerçekçi</span> bir yaklaşım ve planlamayla hayata geçirildiği bir ortam geliştiriyoruz."
   },
   "aboutus":{
+    "baslik": "hakkımızda",
     "paragraf1": "<span class=\"CarrotOrange\">Puente</span>, insan gelişimine odaklı bir çalışma vizyonudur. Bize göre şirket başarısı için doğru ölçek, insanların hayatlarını ne kadar geliştirebildiğimizdir. Bizler Puente’de bu vizyonla ilerlerken, geriye kalan her şeyin zaten gerçekleşeceğine inanıyoruz.",
     "paragraf2": "<span class=\"Viking\">Bizler etrafımızdaki piyasa kur veya ekonomik duruma göre hareket etmek yerine; güçlü, iddialı ve cesur bir şekilde öncülük ederek büyüyebileceğimiz bir şirket temeli oluşturmakta kararlıyız.</span> <span class=\"Heliotrope\">Yeni teknolojilere açık bir şekilde sürekli öğrenen</span>, öğrenmeyi ve ilerlemeyi bir takım olarak genel bir çalışma şekline dönüştüren, piyasanın ’Normal’ saydığı yanlışlara ve kar uğruna yapılan her türlü düzene ve arka yola karşı duran, sonunda hep iyilerin kazandığını gösteren bir şirket olmak istiyoruz.",
     "paragraf3": "Vizyonun, öncelikle çalışanlarımıza sağladığımız çalışma ortamından başladığını biliyoruz. Puente çalışanları vizyonun onlara odaklı olduğunun farkındadır.  Onlara düşen iş ve sorumluluklarda sıkıntı ve zorluklarla karşılaştıklarında işlerini severek yapmaya devam ederler. <span class=\"CeriseRed\">Çünkü zorlukların dayanma gücü, dayanma gücünün de hiçbir eksiği olmayan olgun kişiler, yetkin mühendisler ve sanatçılar yarattığını bilirler.</span>"
   },
   "contact":{
+    "baslik": "iletişim",
     "paragraf1": "Bu vizyonun gerçekleşmesi için size kendinizden önce <span class=\"Mulberry\">takım arkadaşınızı</span> düşünmeniz öğretilir. Eksiklerin ve hataların hesabı tutulmaz, ama <span class=\"CarrotOrange\">her başarı kutlanır</span>. Dolayısıyla kendinizi kanıtlama çabasıyla başkalarıyla yarışmanıza ya da kendinizi kıyaslamanıza gerek yoktur. Başkalarının yükselmenizi istediğini bilerek, <span class=\"Viking\">özgürce</span> çalışırsınız. Soru sormaktan, eleştirilmekten, hata yapmaktan korkmazsınız çünkü herkesin yegâne amacı, <span class=\"InchWorm\">birlikte büyümemizdir.</span>",
     "paragraf2": "Amacımız, gelişen teknolojiler ve gelişen Türkiye arasında bir köprü oluştururken insanların yaşam, bol yaşam tecrübe etmelerini sağlamaktır."
   }

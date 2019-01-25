@@ -62,7 +62,11 @@ class AboutUs extends React.Component {
           >
             <div id={gorilDiv}><Gorilla clasName={gorilClass} /></div>
             <div id="aboutusinlinecontainer">
-              <div className="hakkimizda" id="hakkimizdah1">&lt;h1&gt;hakkımızda&lt;/h1&gt;</div>
+              <div className="hakkimizda" id="hakkimizdah1">
+              &lt;h1&gt;
+                {t('aboutus.baslik')}
+              &lt;/h1&gt;
+              </div>
               <p className="aboutusp fp">
                 &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf1'))}
