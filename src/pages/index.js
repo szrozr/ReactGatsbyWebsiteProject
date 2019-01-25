@@ -56,6 +56,13 @@ class IndexPage extends React.Component {
     },
   }
 
+  static getDerivedStateFromProps(props, state) {
+    if (!state.isSet) {
+      setLanguage(props.lang);
+    }
+    return { isSet: true };
+  }
+
   componentDidMount() {
     this.setComponentHeight();
     window.addEventListener('resize', this.setComponentHeight);
@@ -219,7 +226,6 @@ class IndexPage extends React.Component {
                     </TrackVisibility>
                     <div id="lang">
                       <button className="langpass" type="button" onClick={this.handleSetLanguage('tr')}>TR</button>
-            /
                       <button className="langpass" type="button" onClick={this.handleSetLanguage('en')}>EN</button>
                     </div>
                   </div>
