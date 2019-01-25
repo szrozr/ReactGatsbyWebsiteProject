@@ -27,15 +27,9 @@ provider:
 functions:
   index:
     handler: handlers/index.index
-    # events:
-    #   - http:
-    #       path: /profile/{uuid}/{proxy+}
-    #       method: get
-    #       cors: true
     lambdaAtEdge:
       distribution: 'WebAppCloudFrontDistribution'
       eventType: 'origin-response'
-      # includeBody: true
 
 resources:
   Resources:
