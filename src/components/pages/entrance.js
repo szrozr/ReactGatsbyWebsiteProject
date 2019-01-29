@@ -11,7 +11,7 @@ class Entrance extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
   render() {
@@ -39,13 +39,12 @@ class Entrance extends React.Component {
           iletisim={iletisim}
           activeId=""
         />
+
         <div id="lang">
-          <a href="/tr" className="langpass">TR </a>
-          <a href="/en" className="langpass">/ ENG</a>
-          {/* <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+          <ul className="lang-switcher">
+            <li><a href="/en" className="is-active">En</a></li>
+            <li><a href="/tr">Tr</a></li>
+          </ul>
         </div>
         <div id="animationdiv"><img id="peunteanimation" src={puenteAnimation} alt="" /></div>
       </div>

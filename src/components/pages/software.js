@@ -56,10 +56,6 @@ class Software extends React.Component {
           <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
                       &nbsp;
           <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
-          {/* <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('en')}>EN</button> */}
         </div>
         <div
           className="softwareContainer"
@@ -87,7 +83,7 @@ class Software extends React.Component {
             &emsp;
               {ReactHtmlParser(t('software.paragraf3'))}
             </p>
-            <div>
+            <div className="tech-logo">
               <SoftwareLogo />
             </div>
           </div>

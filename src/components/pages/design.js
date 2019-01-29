@@ -89,7 +89,7 @@ class Design extends React.Component {
               &emsp;
                 {ReactHtmlParser(t('design.paragraf3'))}
               </p>
-              <div className="bottomLogo">
+              <div className="tech-logo" style={{ width: '54%' }}>
                 <SubLogo />
               </div>
             </div>

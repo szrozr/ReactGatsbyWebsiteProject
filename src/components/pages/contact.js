@@ -173,7 +173,6 @@ class Contact extends React.Component {
                   Çankaya / Ankara
                   </div>
                 </div>
-                <br />
                 <div className="flex">
                   <div className="sembol">
                     <Phone />
@@ -183,7 +182,6 @@ class Contact extends React.Component {
                   +90 312 438 54 38
                   </div>
                 </div>
-                <br />
                 <div className="flex">
                   <div className="sembol">
                     <Fax />
@@ -193,7 +191,6 @@ class Contact extends React.Component {
                   +90 312 438 54 24
                   </div>
                 </div>
-                <br />
                 <div className="flex">
                   <div className="sembol">
                     <Web />
@@ -203,7 +200,6 @@ class Contact extends React.Component {
                   www.puentedev.io
                   </div>
                 </div>
-                <br />
                 <div className="flex">
                   <div className="sembol">
                     <Mail />

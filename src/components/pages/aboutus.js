@@ -93,7 +93,7 @@ class AboutUs extends React.Component {
               &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf3'))}
               </p>
-              <div>
+              <div className="tech-logo">
                 <AboutusLogo />
               </div>
             </div>
