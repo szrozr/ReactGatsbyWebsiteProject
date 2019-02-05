@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
@@ -17,7 +18,7 @@ class AboutUs extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
   handleSetLanguage = key => () => {
@@ -45,6 +46,9 @@ class AboutUs extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
+
     return (
       <React.Fragment>
         <div className={clasName} style={{ height: '100%' }}>
@@ -59,13 +63,14 @@ class AboutUs extends React.Component {
               hand={handle}
             />
             <div id="lang">
-              <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
-                      &nbsp;
-              <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
-              {/* <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+              <ul className="lang-switcher">
+                <li>
+                  <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+                </li>
+                <li>
+                  <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+                </li>
+              </ul>
             </div>
           </div>
           <div
@@ -77,20 +82,20 @@ class AboutUs extends React.Component {
             <div id={gorilDiv}><Gorilla clasName={gorilClass} /></div>
             <div id="aboutusinlinecontainer">
               <div className="hakkimizda" id="hakkimizdah1">
-              &lt;h1&gt;
+                &lt;h1&gt;
                 {t('aboutus.baslik')}
-              &lt;/h1&gt;
+                &lt;/h1&gt;
               </div>
               <p className="aboutusp fp">
                 &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf1'))}
               </p>
               <p className="aboutusp">
-              &emsp;
+                &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf2'))}
               </p>
               <p className="aboutusp">
-              &emsp;
+                &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf3'))}
               </p>
               <div className="tech-logo">

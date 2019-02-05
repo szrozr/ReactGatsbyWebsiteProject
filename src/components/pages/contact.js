@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
@@ -54,7 +55,7 @@ class Contact extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
   handleSetLanguage = key => () => {
@@ -113,6 +114,8 @@ class Contact extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
     const handleClick = (section) => {
       handle(section);
     };
@@ -131,13 +134,14 @@ class Contact extends React.Component {
             />
           </div>
           <div id="lang">
-            <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
-                      &nbsp;
-            <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
-            {/* <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+            <ul className="lang-switcher">
+              <li>
+                <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+              </li>
+              <li>
+                <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+              </li>
+            </ul>
           </div>
           <div
             className="contactContainer"
@@ -151,13 +155,13 @@ class Contact extends React.Component {
             <div className="contactinlinecontainer">
               <div className="paragraf">
                 <p className="contactusp ilksatir">
-                &emsp;
-                &emsp;
+                  &emsp;
+                  &emsp;
                   {ReactHtmlParser(t('contact.paragraf1'))}
                 </p>
                 <p className="contactusp">
-                &emsp;
-                &emsp;
+                  &emsp;
+                  &emsp;
                   {ReactHtmlParser(t('contact.paragraf2'))}
                 </p>
               </div>
@@ -169,8 +173,8 @@ class Contact extends React.Component {
                   </div>
                   &nbsp;
                   <div className="icerik">
-                  Aziziye Mah. Cinnah Cad. 72/15
-                  Çankaya / Ankara
+                    Aziziye Mah. Cinnah Cad. 72/15
+                    Çankaya / Ankara
                   </div>
                 </div>
                 <div className="flex">
@@ -179,7 +183,7 @@ class Contact extends React.Component {
                   </div>
                   &nbsp;
                   <div className="icerik">
-                  +90 312 438 54 38
+                    +90 312 438 54 38
                   </div>
                 </div>
                 <div className="flex">
@@ -188,7 +192,7 @@ class Contact extends React.Component {
                   </div>
                   &nbsp;
                   <div className="icerik">
-                  +90 312 438 54 24
+                    +90 312 438 54 24
                   </div>
                 </div>
                 <div className="flex">
@@ -197,7 +201,7 @@ class Contact extends React.Component {
                   </div>
                   &nbsp;
                   <div className="icerik">
-                  www.puentedev.io
+                    www.puentedev.io
                   </div>
                 </div>
                 <div className="flex">
@@ -206,7 +210,7 @@ class Contact extends React.Component {
                   </div>
                   &nbsp;
                   <div className="icerik">
-                  info@puentedev.io
+                    info@puentedev.io
                   </div>
                 </div>
               </div>

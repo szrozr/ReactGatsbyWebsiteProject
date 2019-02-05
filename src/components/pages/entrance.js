@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import puenteAnimation from '../../assets/images/entranceimages/puenteanimation2.gif';
+import { getLanguage } from 'react-switch-lang';
+import puenteAnimation from '../../assets/images/entranceimages/8a4.gif';
 import NavBar from '../NavBar';
 
 const bool = true;
@@ -28,6 +29,8 @@ class Entrance extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active' : '';
+    const trClassName = getLanguage() === 'tr' ? 'is-active' : '';
     return (
       <div className={clasName} style={{ height: '100%' }}>
         <NavBar
@@ -42,8 +45,8 @@ class Entrance extends React.Component {
 
         <div id="lang">
           <ul className="lang-switcher">
-            <li><a href="/en" className="is-active">En</a></li>
-            <li><a href="/tr">Tr</a></li>
+            <li><a href="/en" className={enClassName}>En</a></li>
+            <li><a href="/tr" className={trClassName}>Tr</a></li>
           </ul>
         </div>
         <div id="animationdiv"><img id="peunteanimation" src={puenteAnimation} alt="" /></div>

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import {
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
 
-import Gorilla from '../software-images/software-goril';
+import Gorilla from '../software-images/sw-gorilla';
 import SoftwareLogo from '../software-images/software-logo';
 import '../../styles/software.scss';
 
@@ -18,7 +19,7 @@ class Software extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
   handleSetLanguage = key => () => {
@@ -39,6 +40,9 @@ class Software extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
+
     return (
       <div className={clasName} style={{ height: '100%' }}>
         <div>
@@ -53,9 +57,14 @@ class Software extends React.Component {
           />
         </div>
         <div id="lang">
-          <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
-                      &nbsp;
-          <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
+          <ul className="lang-switcher">
+            <li>
+              <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+            </li>
+            <li>
+              <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+            </li>
+          </ul>
         </div>
         <div
           className="softwareContainer"
@@ -66,9 +75,9 @@ class Software extends React.Component {
           <div id="softwaregorilladiv"><Gorilla /></div>
           <div id="softwareinlinecontainer">
             <div className="software" id="softwareh1">
-            &lt;h1&gt;
+              &lt;h1&gt;
               {t('software.baslik')}
-            &lt;/h1&gt;
+              &lt;/h1&gt;
             </div>
             <p className="softwarep">
               <br />
@@ -76,11 +85,11 @@ class Software extends React.Component {
               {ReactHtmlParser(t('software.paragraf1'))}
             </p>
             <p className="softwarep">
-            &emsp;
+              &emsp;
               {ReactHtmlParser(t('software.paragraf2'))}
             </p>
             <p className="softwarep">
-            &emsp;
+              &emsp;
               {ReactHtmlParser(t('software.paragraf3'))}
             </p>
             <div className="tech-logo">

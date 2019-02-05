@@ -37,17 +37,14 @@ div:nth-child(3) {
   text-align: right;
 }
 
-  // anchor tag version
+a{
+  color: #000000;
+  text-decoration: none;
+}
 
-  a{
-    color: #000000;
-    text-decoration: none;
-  }
-
-  a:hover{
-    text-decoration: underline;
-  }
-
+a:hover{
+  text-decoration: underline;
+}
 
   //button version
 
@@ -122,9 +119,9 @@ div:nth-child(3) {
 
 
 
-$clr_lang: #529427 !default;
+$clr_lang: #000000 !default;
 $clr_border: #529427 !default;
-$clr_lang--active: #000000 !default;
+$clr_lang--active: #9e0000 !default;
 $clr_lang--active-pill: #ffffff !default;
 $clr_bg--active: #529427 !default;
 // Dimensions
@@ -143,23 +140,43 @@ $border-radius: 15px !default;
         &::before {
           content: none;
         }
-        a {
+        button {
             padding: 3px 5px;
             color: $clr_lang;
             transition: all 0.5s ease;
-            text-decoration: none;
             display: inline-block;
             height: 100%;
             min-width: 40px;
             text-align: center;
+            font-size: 0.6rem;
+            color: #000000;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
             &:hover {
-                text-decoration: none;
+              text-decoration: underline;
             }
             &.is-active {
-                color: $clr_lang--active;
+                color: $clr_lang--active !important;
                 cursor: default;
             }
         }
+        a {
+          padding: 3px 5px;
+          color: $clr_lang;
+          transition: all 0.5s ease;
+          text-decoration: none;
+          display: inline-block;
+          height: 100%;
+          min-width: 40px;
+          text-align: center;
+          &:hover {
+              text-decoration: none;
+          }
+          &.is-active {
+              color: $clr_lang--active !important;
+              cursor: default;
+          }
+      }
     }
 }
 

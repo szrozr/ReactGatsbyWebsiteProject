@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import {
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
 import '../../styles/design.scss';
 import '../../styles/software.scss';
-import DesignGorilla from '../design-images/design-gorilla';
+import DesignGorilla from '../design-images/designGorilla';
 import SubLogo from '../design-images/designlogo';
 
 class Design extends React.Component {
@@ -40,6 +41,8 @@ class Design extends React.Component {
     if (onleave) {
       clasname = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
     return (
       <React.Fragment>
         <div className={clasname} style={{ height: '100%' }}>
@@ -55,13 +58,14 @@ class Design extends React.Component {
             />
           </div>
           <div id="lang">
-            <button type="button" className="langpass" onClick={this.handleSetLanguage('tr')}>TR</button>
-                      &nbsp;
-            <button type="button" className="langpass" onClick={this.handleSetLanguage('en')}>/ ENG</button>
-            {/* <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button"
-                       onClick={this.handleSetLanguage('en')}>EN</button> */}
+            <ul className="lang-switcher">
+              <li>
+                <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+              </li>
+              <li>
+                <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+              </li>
+            </ul>
           </div>
           <div
             className="designContainer"
