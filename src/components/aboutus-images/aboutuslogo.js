@@ -10,7 +10,7 @@ const confluence = () => (
         }
       }
     `}
-    render={data => <img id="aboutusLogo" src={data.image.publicURL} alt="" />}
+    render={data => <img className="aboutusLogo" src={data.image.publicURL} alt="" />}
   />
 );
 export default confluence;

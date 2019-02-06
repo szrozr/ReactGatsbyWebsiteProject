@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import puenteAnimation from '../assets/images/entranceimages/puenteanimation2.gif';
-import NavBar from '../components/NavBar';
+import { getLanguage } from 'react-switch-lang';
+import puenteAnimation from '../../assets/images/entranceimages/8a4.gif';
+import NavBar from '../NavBar';
 
 const bool = true;
 
@@ -11,7 +12,7 @@ class Entrance extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
   render() {
@@ -28,6 +29,8 @@ class Entrance extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active' : '';
+    const trClassName = getLanguage() === 'tr' ? 'is-active' : '';
     return (
       <div className={clasName} style={{ height: '100%' }}>
         <NavBar
@@ -39,11 +42,22 @@ class Entrance extends React.Component {
           iletisim={iletisim}
           activeId=""
         />
+
+        <div id="lang">
+          <ul className="lang-switcher">
+            <li><a href="/en" className={enClassName}>En</a></li>
+            <li><a href="/tr" className={trClassName}>Tr</a></li>
+          </ul>
+        </div>
         <div id="animationdiv"><img id="peunteanimation" src={puenteAnimation} alt="" /></div>
       </div>
     );
   }
 }
+
+Entrance.defaultProps = {
+  isVisible: false,
+};
 
 Entrance.propTypes = {
   tasarim: PropTypes.string.isRequired,
@@ -51,7 +65,7 @@ Entrance.propTypes = {
   hakkimizda: PropTypes.string.isRequired,
   iletisim: PropTypes.string.isRequired,
   handle: PropTypes.func.isRequired,
-  isVisible: PropTypes.bool.isRequired,
+  isVisible: PropTypes.bool,
   pagetransition: PropTypes.bool.isRequired,
   onleave: PropTypes.bool.isRequired,
 };

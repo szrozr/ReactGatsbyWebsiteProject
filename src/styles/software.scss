@@ -3,7 +3,7 @@
   display: inline-block;
   margin-left: 19%;
   width: 150%;
- // border: 1px solid red;
+ // border: 1px solid green;
 }
 
 .software{
@@ -30,9 +30,12 @@
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 1.6vmin;
+    font-size: 14px;
     text-align: justify;
     margin-top: 1vh;
+    @media screen and (min-width: 1600px) {
+      font-size: 18px;
+    }
     }
 
     .Amaranth{
@@ -48,12 +51,15 @@
     #softwareinlinecontainer{
       display: inline-block;
       margin-left: 10%;
+    //  border: 1px solid blue;
+
+      width: 171vw;
     }
 
     #softwaregorilladiv{
       float: left;
       width: 102%;
-     // border: 1px solid red;
+     //  border: 1px solid red;
       padding: 0;
       height: 55%;
     }

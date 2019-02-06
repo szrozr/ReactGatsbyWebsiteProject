@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
-import NavBar from '../components/NavBar';
+import NavBar from '../NavBar';
 
-import Gorilla from '../components/software-images/software-goril';
-import SoftwareLogo from '../components/software-images/software-logo';
-import '../styles/software.scss';
+import Gorilla from '../software-images/sw-gorilla';
+import SoftwareLogo from '../software-images/software-logo';
+import '../../styles/software.scss';
 
 
 class Software extends React.Component {
@@ -21,8 +19,12 @@ class Software extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
+
+  handleSetLanguage = key => () => {
+    setLanguage(key);
+  };
 
   render() {
     const {
@@ -38,6 +40,9 @@ class Software extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
+
     return (
       <div className={clasName} style={{ height: '100%' }}>
         <div>
@@ -51,6 +56,16 @@ class Software extends React.Component {
             hand={handle}
           />
         </div>
+        <div id="lang">
+          <ul className="lang-switcher">
+            <li>
+              <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+            </li>
+            <li>
+              <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+            </li>
+          </ul>
+        </div>
         <div
           className="softwareContainer"
           style={{
@@ -59,21 +74,25 @@ class Software extends React.Component {
         >
           <div id="softwaregorilladiv"><Gorilla /></div>
           <div id="softwareinlinecontainer">
-            <div className="software" id="softwareh1">&lt;h1&gt;yazılım&lt;/h1&gt;</div>
+            <div className="software" id="softwareh1">
+              &lt;h1&gt;
+              {t('software.baslik')}
+              &lt;/h1&gt;
+            </div>
             <p className="softwarep">
               <br />
               &emsp;
               {ReactHtmlParser(t('software.paragraf1'))}
             </p>
             <p className="softwarep">
-            &emsp;
+              &emsp;
               {ReactHtmlParser(t('software.paragraf2'))}
             </p>
             <p className="softwarep">
-            &emsp;
+              &emsp;
               {ReactHtmlParser(t('software.paragraf3'))}
             </p>
-            <div>
+            <div className="tech-logo">
               <SoftwareLogo />
             </div>
           </div>
@@ -88,7 +107,7 @@ Software.propTypes = {
   yazilim: PropTypes.string.isRequired,
   hakkimizda: PropTypes.string.isRequired,
   iletisim: PropTypes.string.isRequired,
-  isVisible: PropTypes.func.isRequired,
+  isVisible: PropTypes.bool.isRequired,
   handle: PropTypes.func.isRequired,
   pagetransition: PropTypes.bool.isRequired,
   onleave: PropTypes.bool.isRequired,

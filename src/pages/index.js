@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 import TrackVisibility from 'react-on-screen';
 import PropTypes from 'prop-types';
@@ -11,24 +9,18 @@ import {
   setLanguage,
   translate,
 } from 'react-switch-lang';
-import Deneme from './deneme';
-import ImageLoader from './imageloaderdeneme';
-import puenteAnimation from '../assets/images/entranceimages/puenteanimation.gif';
-
 
 // Translation Higher Order Component
 import tr from '../components/language/tr.json';
 import en from '../components/language/en.json';
 
-import LogoImage from '../components/logoImage';
 import '../styles/index.scss';
-import NavBar from '../components/NavBar';
-import AboutUs from './aboutus';
-import Contact from './contact';
-import Design from './design';
+import AboutUs from '../components/pages/aboutus';
+import Contact from '../components/pages/contact';
+import Design from '../components/pages/design';
 import Layout from '../components/layout';
-import Software from './software';
-import Entrance1 from './entrance';
+import Software from '../components/pages/software';
+import Entrance from '../components/pages/entrance';
 
 
 const bool = true;
@@ -136,70 +128,6 @@ class IndexPage extends React.Component {
   render() {
     const { t } = this.props;
     const { height, formControls } = this.state;
-    const ComponentToTrack = ({ isVisible }) => {
-      const red = 'red';
-      const style = {
-        background: isVisible ? red : 'blue',
-      };
-      return <div style={style}>Hello</div>;
-    };
-    ComponentToTrack.propTypes = {
-      isVisible: PropTypes.bool,
-    };
-    ComponentToTrack.defaultProps = {
-      isVisible: false,
-    };
-    const Entrance = ({
-      isVisible,
-      handle,
-      pagetransition,
-      onleave,
-      logovisibility,
-    }) => {
-      let navclass = 'notonscreen';
-      let animation = {};
-      let visibility = { visibility: 'hidden;' };
-
-      if (isVisible) {
-        navclass = 'onscreen';
-        animation = { animation: '.5s ease-in 0.5s appear 1 forwards' };
-        visibility = { visibility: 'visible;' };
-      }
-
-      if (pagetransition) {
-        navclass = 'onscreen';
-      }
-      if (onleave) {
-        navclass = 'onscreen';
-      }
-
-      return (
-        <React.Fragment>
-          <div className="Index_LogoWrapper" style={{ height }}>
-            <div id="lang">
-              <button className="langpass" type="button" onClick={this.handleSetLanguage('tr')}>TR</button>
-            /
-              <button className="langpass" type="button" onClick={this.handleSetLanguage('en')}>EN</button>
-            </div>
-            <div className={navclass}><LogoImage /></div>
-            <div className="Index_ContactUsWrapper">
-              <div className="Index_ContactUs" style={animation}>
-&nbsp;
-                <a href="mailto:info@puentedev.io">info@puentedev.io</a>
-              </div>
-            </div>
-            <div className={navclass}><NavBar logovisibility={false} hand={handle} tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} /></div>
-          </div>
-        </React.Fragment>
-      );
-    };
-
-    Entrance.propTypes = {
-      isVisible: PropTypes.bool,
-    };
-    Entrance.defaultProps = {
-      isVisible: false,
-    };
     return (
       <Layout>
         <ReactFullpage
@@ -222,12 +150,8 @@ class IndexPage extends React.Component {
                 <React.Fragment>
                   <div className="section">
                     <TrackVisibility>
-                      <Entrance1 tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={designleave} logovisibility={bool} />
+                      <Entrance tasarim={t('tasarim')} yazilim={t('yazilim')} hakkimizda={t('hakkimizda')} iletisim={t('iletisim')} handle={handleMove} pagetransition={transition} onleave={designleave} logovisibility={bool} />
                     </TrackVisibility>
-                    <div id="lang">
-                      <button className="langpass" type="button" onClick={this.handleSetLanguage('tr')}>TR</button>
-                      <button className="langpass" type="button" onClick={this.handleSetLanguage('en')}>EN</button>
-                    </div>
                   </div>
                   <div className="section">
                     <TrackVisibility>

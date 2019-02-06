@@ -1,18 +1,20 @@
 #designinlinecontainer{
   display: inline-block;
   margin-left: 10%;
+  width: 120.5vw;
+  margin-top: 50px;
 }
 
 .DesignGorilla{
   border: 1px solid white;
   display: inline-block;
   margin-left: 20%;
- // border: 1px solid red;
+ // border: 1px solid green;
 }
 
 #designgorilladiv{
   float: left;
-  width: 102%;
+  width: 89%;
  // border: 1px solid red;
   padding: 0;
   height: 100%;
@@ -34,9 +36,12 @@ color: #CD537C;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 1.6vmin;
-    text-align: justify;
     margin-top: 2vh;
+    font-size: 14px;
+    text-align: justify;
+    @media screen and (min-width: 1600px) {
+      font-size: 18px;
+    }
 }
 
 .p{
@@ -80,10 +85,10 @@ li::before {
   color: #E2DE00;
 }
 
-.designLogo{
-   margin-left: 6%;
-   margin-top: 0vh;
-   width: 46vw;
+#designLogo{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 // yeni renkler
@@ -108,12 +113,16 @@ li::before {
 }
 
 .designContainer{
-  margin-top: 12%;
+  margin-top: 9%;
   width: 92vw;
   align-self: center;
   margin-left: 0;
   display: flex;
 }
+
+.Mulberry{
+  color: #CD537C;
+ }
 
 
 

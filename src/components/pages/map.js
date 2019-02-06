@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import PropTypes from 'prop-types';
-import Map from '../components/contactus-images/maplocation';
+import Map from '../contactus-images/maplocation';
 
 const AnyReactComponent = ({ text }) => <div id="mapicon"><Map /></div>;
 
@@ -11,7 +11,7 @@ class SimpleMap extends Component {
       lat: 39.890343,
       lng: 32.855044,
     },
-    zoom: 16,
+    zoom: 17.1,
   };
 
   componentDidMount() {
@@ -48,7 +48,7 @@ AnyReactComponent.propTypes = {
 };
 
 SimpleMap.propTypes = {
-  center: PropTypes.shape,
+  center: PropTypes.shape(),
   zoom: PropTypes.number,
 };
 

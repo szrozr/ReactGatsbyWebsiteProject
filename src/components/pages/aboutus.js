@@ -1,20 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
   setLanguage,
   translate,
+  getLanguage,
 } from 'react-switch-lang';
 import ReactHtmlParser from 'react-html-parser';
-import NavBar from '../components/NavBar';
-import AboutusLogo from '../components/aboutus-images/aboutuslogo';
-import Gorilla from '../components/aboutus-images/gorillaimage';
-import tr from '../components/language/tr.json';
-import en from '../components/language/en.json';
-import '../components/NavBar.scss';
-import '../styles/aboutus.scss';
+import NavBar from '../NavBar';
+import AboutusLogo from '../aboutus-images/aboutuslogo';
+import Gorilla from '../aboutus-images/gorillaimage';
+import '../NavBar.scss';
+import '../../styles/aboutus.scss';
 
 class AboutUs extends React.Component {
   componentDidMount() {
@@ -22,8 +18,12 @@ class AboutUs extends React.Component {
   }
 
   componentWillUnmount() {
-  // window.removeEventListener('onselect', this.setComponentHeight);
+    // window.removeEventListener('onselect', this.setComponentHeight);
   }
+
+  handleSetLanguage = key => () => {
+    setLanguage(key);
+  };
 
   render() {
     const {
@@ -46,6 +46,9 @@ class AboutUs extends React.Component {
     if (onleave) {
       clasName = 'onscreen';
     }
+    const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
+    const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
+
     return (
       <React.Fragment>
         <div className={clasName} style={{ height: '100%' }}>
@@ -59,6 +62,16 @@ class AboutUs extends React.Component {
               activeId="hakkimizda"
               hand={handle}
             />
+            <div id="lang">
+              <ul className="lang-switcher">
+                <li>
+                  <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+                </li>
+                <li>
+                  <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+                </li>
+              </ul>
+            </div>
           </div>
           <div
             style={{
@@ -68,20 +81,24 @@ class AboutUs extends React.Component {
           >
             <div id={gorilDiv}><Gorilla clasName={gorilClass} /></div>
             <div id="aboutusinlinecontainer">
-              <div className="hakkimizda" id="hakkimizdah1">&lt;h1&gt;hakkımızda&lt;/h1&gt;</div>
+              <div className="hakkimizda" id="hakkimizdah1">
+                &lt;h1&gt;
+                {t('aboutus.baslik')}
+                &lt;/h1&gt;
+              </div>
               <p className="aboutusp fp">
                 &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf1'))}
               </p>
               <p className="aboutusp">
-              &emsp;
+                &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf2'))}
               </p>
               <p className="aboutusp">
-              &emsp;
+                &emsp;
                 {ReactHtmlParser(t('aboutus.paragraf3'))}
               </p>
-              <div>
+              <div className="tech-logo">
                 <AboutusLogo />
               </div>
             </div>
