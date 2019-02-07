@@ -10,14 +10,14 @@
   "iletisim": "Contact us",
   "design": {
     "baslik": "Design",
-    "paragraf1": "We design and develop the kinds of applications, games and websites that we <span class=\"puente2\">love</span> to use ... beautiful, unique, fast, creative, and intuitive.  Our applications instantly create a sense of excitement and anticipation.  Over time they create a sense of confidence and security.",
+    "paragraf1": "We design and develop the kinds of applications, games and websites that we <span class=\"puente2\">love</span> to use... beautiful, unique, fast, creative, and intuitive.  Our applications instantly create a sense of excitement and anticipation.  Over time they create a sense of confidence and security.",
     "paragraf2": "Instead of simply replicating designs that already exist, we design and build <span class=\"puente3\">unique</span>, alternative user experiences according to an application’s audience and needs.  It is our work and our passion to see the vision of each application we develop and make that a <span class=\"puente1\">reality</span>.",
     "paragraf3": "At <span class=\"primary\">Puente</span>, we’ve created an environment where people come first, where we celebrate <span class=\"puente4-alternative\">the freedom to try new things and think differently.</span>,  That environment has birthed passion and creativity, and that is what you will experience when you work with us."
   },
   "software": {
     "baslik": "Software",
     "paragraf1": "We love engineering, we love learning and we love creating.  The code we write is as beautiful as the user interfaces we design.  We use the latest libraries and technologies and we write software that can be trusted ... fast, secure, stable.",
-    "paragraf2": "At <span class=\"primary\">Puente</span>, there is no limit to what we can build: applications, web, mobile, <span class=\"puente2-alternative\">Internet of Things</span>, games, <span class=\"puente4-alternative\">Machine Learning</span>, Artificial Intelligence, <span class=\"puente1\">Natural Language Processing</span>, embedded systems, data mining …  If we haven’t done it yet, we will soon, because we <span class=\"puente3\">specialize in understanding and implementing new ideas.</span>",
+    "paragraf2": "At <span class=\"primary\">Puente</span>, there is no limit to what we can build: web and mobile applications,games; <span class=\"puente2-alternative\">Internet of Things</span>, <span class=\"puente4-alternative\">Machine Learning</span>, Artificial Intelligence, <span class=\"puente1\">Natural Language Processing</span>, Embedded Systems, Data Mining…  If we haven’t done it yet, we will soon, because we <span class=\"puente3\">specialize in understanding and implementing new ideas.</span>",
     "paragraf3": "We bring ideas to life.  We develop elegant solutions to complex problems through innovation and proper assessment."
   },
   "aboutus": {

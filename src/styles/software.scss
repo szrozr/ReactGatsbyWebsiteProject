@@ -12,20 +12,6 @@
  // border: 1px solid green;
 }
 
-#softwaregorilladiv{
-  float: left;
-  width: 100%;
- //  border: 1px solid red;
-  padding: 0;
-  height: 80%;
-}
-
-#softwaregorilldivmobile{
-  padding-top: 10%;
-  width: 65%;
-  height: 65%;
-}
-
 .software{
   font-family: Source Code Pro;
   font-style: normal;
@@ -35,14 +21,14 @@
   color: #3280C2;
   }
 
-.softwareContainer{
-  width: 92vw;
-  align-self: center;
-  margin-left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .softwareContainer{
+    width: 92vw;
+    align-self: center;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .softwarep{
   font-family: Space Mono;

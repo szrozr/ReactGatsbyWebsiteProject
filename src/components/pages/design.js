@@ -102,9 +102,6 @@ class Design extends React.Component {
             </div>
           </div>
         </div>
-        <div className="hide-desktop">
-          <div id="designgorilladivmobile"><DesignGorilla /></div>
-        </div>
       </React.Fragment>
     );
   }

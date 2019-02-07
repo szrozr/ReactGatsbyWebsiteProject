@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Puente Technology and Design',
+    title: 'Puente Technology & Design',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
