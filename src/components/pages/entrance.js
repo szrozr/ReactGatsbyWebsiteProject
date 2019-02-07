@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getLanguage } from 'react-switch-lang';
-import puenteAnimation from '../../assets/images/entranceimages/8a4.gif';
+import puenteAnimation from '../../assets/images/entranceimages/homeAnimation.gif';
 import NavBar from '../NavBar';
 
 const bool = true;
