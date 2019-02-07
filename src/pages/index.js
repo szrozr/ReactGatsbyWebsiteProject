@@ -133,6 +133,9 @@ class IndexPage extends React.Component {
     const { height, formControls, width } = this.state;
     const isMobile = width <= 800;
     console.log(isMobile, height, width);
+    if (width === 0) {
+      return <div>Loading</div>;
+    }
     if (isMobile) {
       return (
         <div>
