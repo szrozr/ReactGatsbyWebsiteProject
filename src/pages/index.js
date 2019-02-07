@@ -22,6 +22,7 @@ import Layout from '../components/layout';
 import Software from '../components/pages/software';
 import Entrance from '../components/pages/entrance';
 import Gorilla from '../components/aboutus-images/gorillaimage';
+import puenteAnimation from '../assets/images/entranceimages/loading.gif';
 
 const bool = true;
 let transition = false;
@@ -134,7 +135,11 @@ class IndexPage extends React.Component {
     const isMobile = width <= 800;
     console.log(isMobile, height, width);
     if (width === 0) {
-      return <div>Loading</div>;
+      return (
+        <div className="loading" style={{ margin: '48%', marginTop: '20%' }}>
+          <img id="loadingAnimation" src={puenteAnimation} alt="" />
+        </div>
+      );
     }
     if (isMobile) {
       return (

@@ -5,7 +5,7 @@
   "hello": "Hello {name}!",
   "Index_ContactUs": "For more information contact us at",
   "tasarim": "Design",
-  "yazilim": "Software",
+  "yazilim": "Technology",
   "hakkimizda": "About us",
   "iletisim": "Contact us",
   "design": {
@@ -15,7 +15,7 @@
     "paragraf3": "At <span class=\"primary\">Puente</span>, we’ve created an environment where people come first, where we celebrate <span class=\"puente4-alternative\">the freedom to try new things and think differently.</span>,  That environment has birthed passion and creativity, and that is what you will experience when you work with us."
   },
   "software": {
-    "baslik": "Software",
+    "baslik": "Technology",
     "paragraf1": "We love engineering, we love learning and we love creating.  The code we write is as beautiful as the user interfaces we design.  We use the latest libraries and technologies and we write software that can be trusted ... fast, secure, stable.",
     "paragraf2": "At <span class=\"primary\">Puente</span>, there is no limit to what we can build: web and mobile applications,games; <span class=\"puente2-alternative\">Internet of Things</span>, <span class=\"puente4-alternative\">Machine Learning</span>, Artificial Intelligence, <span class=\"puente1\">Natural Language Processing</span>, Embedded Systems, Data Mining…  If we haven’t done it yet, we will soon, because we <span class=\"puente3\">specialize in understanding and implementing new ideas.</span>",
     "paragraf3": "We bring ideas to life.  We develop elegant solutions to complex problems through innovation and proper assessment."

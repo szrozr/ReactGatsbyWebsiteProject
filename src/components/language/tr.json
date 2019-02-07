@@ -5,7 +5,7 @@
   "hello" : "Merhaba {name}!",
   "Index_ContactUs": "Daha fazla bilgi için iletişime geçin",
   "tasarim": "Tasarım",
-  "yazilim": "Yazılım",
+  "yazilim": "Teknoloji",
   "hakkimizda": "Hakkımızda",
   "iletisim": "İletişim",
   "design": {
@@ -15,7 +15,7 @@
     "paragraf3": "Bizler <span class=\"primary\">Puente’de</span>, <span class=\"puente4-alternative\">yeni şeyler deneme ve farklı düşünme özgürlüğünün</span> olduğu, insan odaklı bir ortam yarattık. Sizler de bizimle çalıştığınızda bu tutku ve yaratıcılığa şahit olacaksınız."
   },
   "software": {
-    "baslik": "Yazılım",
+    "baslik": "Teknoloji",
     "paragraf1": "Bizler Puente’de öğrenmeyi ve yaratmayı, yani mühendisliği seviyoruz. İnsan gelişimine odaklı ilerlerken hem kendi fikirlerimizle, hem de yıllarca birlikte çalışarak inşa ettiğimiz ortaklarımızla  kaliteli çözümler üretiyoruz. Bunu yaparken her zaman kendini kanıtlamış son teknoloji ve yöntemlerle çalışıp hızlı, güvenli ve iddialı yazılımlar üretiyoruz.",
     "paragraf2": "<span class=\"primary\">Puente'de</span> yapabileceklerimizin sınırı yoktur: Web ve Mobil uygulamalar, oyunlar;  <span class=\"puente2-alternative\">Internet of Things</span>, <span class=\"puente4-alternative\">Machine Learning</span>, Artificial İntelligence, <span class=\"puente1\">Natural Language Processing</span>, Embedded Systems, Data Mining ve çok daha fazlası. Henüz yapamadığımız bir şey varsa bu değişecektir, çünkü yeni fikirleri anlamak ve uygulamak bizim uzmanlık alanımızdır.",
     "paragraf3": "Bu projeleri geliştirirken yaratıcılığın aktığı, konuşmaların lafta kalmadığı, aksine gerçekçi bir yaklaşım ve planlamayla değerli fikirlerin hayata geçirildiği bir ortam sağlıyoruz."
