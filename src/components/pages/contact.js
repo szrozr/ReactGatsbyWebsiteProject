@@ -120,105 +120,103 @@ class Contact extends React.Component {
       handle(section);
     };
     return (
-      <React.Fragment>
-        <div className={clasName} style={{ height: '100%' }}>
-          <div>
-            <NavBar
-              isFooter={false}
-              tasarim={tasarim}
-              yazilim={yazilim}
-              hakkimizda={hakkimizda}
-              iletisim={iletisim}
-              activeId="iletisim"
-              hand={handleClick}
-            />
-          </div>
-          <div id="lang">
-            <ul className="lang-switcher">
-              <li>
-                <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
-              </li>
-              <li>
-                <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
-              </li>
-            </ul>
-          </div>
-          <div
-            className="contactContainer"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              height: '100%',
-            }}
-          >
-            <div className="contactinlinecontainer">
-              <div className="paragraf">
-                <p className="contactusp ilksatir">
-                  &emsp;
-                  &emsp;
-                  {ReactHtmlParser(t('contact.paragraf1'))}
-                </p>
-                <p className="contactusp">
-                  &emsp;
-                  &emsp;
-                  {ReactHtmlParser(t('contact.paragraf2'))}
-                </p>
+      <div className={`${clasName} hide-mobile`}>
+        <div>
+          <NavBar
+            isFooter={false}
+            tasarim={tasarim}
+            yazilim={yazilim}
+            hakkimizda={hakkimizda}
+            iletisim={iletisim}
+            activeId="iletisim"
+            hand={handleClick}
+          />
+        </div>
+        <div id="lang">
+          <ul className="lang-switcher">
+            <li>
+              <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+            </li>
+            <li>
+              <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="contactContainer"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            height: '100%',
+          }}
+        >
+          <div className="contactinlinecontainer">
+            <div className="paragraf">
+              <p className="contactusp ilksatir">
+                &emsp;
+                &emsp;
+                {ReactHtmlParser(t('contact.paragraf1'))}
+              </p>
+              <p className="contactusp">
+                &emsp;
+                &emsp;
+                {ReactHtmlParser(t('contact.paragraf2'))}
+              </p>
+            </div>
+            <div className="adresbilgileri">
+              <div className="baslik">PUENTE YAZILIM & DESIGN</div>
+              <div className="flex fa">
+                <div className="sembol">
+                  <Location />
+                </div>
+                &nbsp;
+                <div className="icerik">
+                  Aziziye Mah. Cinnah Cad. 72/15
+                  Çankaya / Ankara
+                </div>
               </div>
-              <div className="adresbilgileri">
-                <div className="baslik">PUENTE YAZILIM & DESIGN</div>
-                <div className="flex fa">
-                  <div className="sembol">
-                    <Location />
-                  </div>
-                  &nbsp;
-                  <div className="icerik">
-                    Aziziye Mah. Cinnah Cad. 72/15
-                    Çankaya / Ankara
-                  </div>
+              <div className="flex">
+                <div className="sembol">
+                  <Phone />
                 </div>
-                <div className="flex">
-                  <div className="sembol">
-                    <Phone />
-                  </div>
-                  &nbsp;
-                  <div className="icerik">
-                    +90 312 438 54 38
-                  </div>
+                &nbsp;
+                <div className="icerik">
+                  +90 312 438 54 38
                 </div>
-                <div className="flex">
-                  <div className="sembol">
-                    <Fax />
-                  </div>
-                  &nbsp;
-                  <div className="icerik">
-                    +90 312 438 54 24
-                  </div>
+              </div>
+              <div className="flex">
+                <div className="sembol">
+                  <Fax />
                 </div>
-                <div className="flex">
-                  <div className="sembol">
-                    <Web />
-                  </div>
-                  &nbsp;
-                  <div className="icerik">
-                    www.puentedev.io
-                  </div>
+                &nbsp;
+                <div className="icerik">
+                  +90 312 438 54 24
                 </div>
-                <div className="flex">
-                  <div className="sembol">
-                    <Mail />
-                  </div>
-                  &nbsp;
-                  <div className="icerik">
-                    info@puentedev.io
-                  </div>
+              </div>
+              <div className="flex">
+                <div className="sembol">
+                  <Web />
+                </div>
+                &nbsp;
+                <div className="icerik">
+                  www.puentedev.io
+                </div>
+              </div>
+              <div className="flex">
+                <div className="sembol">
+                  <Mail />
+                </div>
+                &nbsp;
+                <div className="icerik">
+                  info@puentedev.io
                 </div>
               </div>
             </div>
-            <div id="map"><Map /></div>
           </div>
+          <div id="map"><Map /></div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

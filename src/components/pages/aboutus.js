@@ -51,7 +51,7 @@ class AboutUs extends React.Component {
 
     return (
       <React.Fragment>
-        <div className={clasName} style={{ height: '100%' }}>
+        <div className={`${clasName} hide-mobile`}>
           <div>
             <NavBar
               isFooter={false}
@@ -103,6 +103,9 @@ class AboutUs extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="hide-desktop">
+          <div id={gorilDiv}><Gorilla /></div>
         </div>
       </React.Fragment>
     );

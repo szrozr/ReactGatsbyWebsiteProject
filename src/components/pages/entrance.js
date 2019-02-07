@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getLanguage } from 'react-switch-lang';
-import puenteAnimation from '../../assets/images/entranceimages/8a4.gif';
+import puenteAnimation from '../../assets/images/entranceimages/homeAnimation.gif';
 import NavBar from '../NavBar';
 
 const bool = true;
@@ -32,7 +32,15 @@ class Entrance extends React.Component {
     const enClassName = getLanguage() === 'en' ? 'is-active' : '';
     const trClassName = getLanguage() === 'tr' ? 'is-active' : '';
     return (
-      <div className={clasName} style={{ height: '100%' }}>
+      <div
+        className={clasName}
+        style={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-around',
+        }}
+      >
         <NavBar
           logovisibility={false}
           hand={handle}
