@@ -1,5 +1,17 @@
 @import '../styles/partials/variables';
 
+.hide-mobile {
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media not all and (max-width: 700px) {
+    display: none;
+  }
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -66,12 +78,12 @@
 
   #tasarimid {
     span {
-      color: $primary;
+      color: $puente1;
       font-size: 0.75em;
     }
     &.active,
     &:hover {
-      background-color: $primary;
+      background-color: $puente1;
 
       span {
         color: $light;
@@ -81,12 +93,12 @@
 
   #yazilim {
     span {
-      color: $mulberry;
+      color: $puente2;
       font-size: 0.75em;
     }
     &.active,
     &:hover {
-      background-color: $mulberry;
+      background-color: $puente2;
       span {
         color: $light;
       }
@@ -96,12 +108,12 @@
 
   #hakkimizda {
     span {
-      color: $viking;
+      color: $puente3;
       font-size: 0.75em;
     }
     &.active,
     &:hover {
-      background-color: $viking;
+      background-color: $puente3;
       span {
         color: $light;
       }
@@ -110,12 +122,12 @@
 
   #iletisim {
     span {
-      color: $inch_worm;
+      color: $puente4;
       font-size: 0.75em;
     }
     &.active,
     &:hover {
-      background-color: $inch_worm;
+      background-color: $puente4;
       span {
         color: $light;
       }
@@ -144,7 +156,6 @@
 .notonscreen{
   opacity: 0.3;
 }
-
 
 
 
@@ -199,8 +210,6 @@
     bottom: 6.7rem;
   }
 
- 
-
   .navbar.responsive span {
     float: none;
     display: inline-block;
@@ -213,8 +222,6 @@
     display: block;
     height: 100%;
   }
-  
-
 
 }
 
@@ -231,8 +238,3 @@
   left: 0;
   position: absolute;
 }
-
-.renkdegis{
-  color: green !important;
-}
-

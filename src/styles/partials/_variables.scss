@@ -5,23 +5,44 @@
 $abbey: #58595B;
 $mercury: #E5E5E5;
 $white: #FFF;
-$corn: #DFDC02;
 $regent-gray: #969CA0;
-$mine-shaft: #2C2C2C;
-$mulberry: #CD537C;
+$fiord: #49576C;
+
+$mojo: #C63D43;
+$chestnut: #B94849;
+
+$boston-blue: #3280C2;
 $viking: #66CDDB;
+
+$spring_leaves: #52875D;
 $inch_worm: #A3E22C;
+
+$corn: #DFDC02;
+$carrot-orange: #EF8F20;
+
 
 // colors' roles
 $primary: $corn;
 
-$dark: $abbey;
+$puente1: $spring_leaves;
+$puente1-alternative: $inch_worm;
+
+$puente2: $boston-blue;
+$puente2-alternative: $viking;
+
+$puente3: $mojo;
+$puente3-alternative: $chestnut;
+
+$puente4: $primary;
+$puente4-alternative: $carrot-orange;
+
+$dark: $fiord;
 $light: $white;
 
 $text-color:$regent-gray;
 
 $light-bg: $mercury;            
-$dark-bg: $mine-shaft;
+$dark-bg: $abbey;
 
 // spacing 
 $spacing-sm: 8px;

@@ -72,10 +72,6 @@ class Navbar extends React.Component {
             {iletisim}
           </span>
         </button>
-
-        <button type="button" className="icon" onClick={myFunction}>
-          <i className="fa fa-bars" />
-        </button>
       </div>
     );
   }

@@ -5,12 +5,14 @@ import {
   translate,
   getLanguage,
 } from 'react-switch-lang';
+
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
 
-import Gorilla from '../software-images/sw-gorilla';
-import SoftwareLogo from '../software-images/software-logo';
 import '../../styles/software.scss';
+
+import SoftwareGorilla from '../software-images/softwareGorilla';
+import SoftwareLogo from '../software-images/software-logo';
 
 
 class Software extends React.Component {
@@ -44,60 +46,62 @@ class Software extends React.Component {
     const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
 
     return (
-      <div className={clasName} style={{ height: '100%' }}>
-        <div>
-          <NavBar
-            isFooter={false}
-            tasarim={tasarim}
-            yazilim={yazilim}
-            hakkimizda={hakkimizda}
-            iletisim={iletisim}
-            activeId="yazilim"
-            hand={handle}
-          />
-        </div>
-        <div id="lang">
-          <ul className="lang-switcher">
-            <li>
-              <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
-            </li>
-            <li>
-              <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
-            </li>
-          </ul>
-        </div>
-        <div
-          className="softwareContainer"
-          style={{
-            height: '100%',
-          }}
-        >
-          <div id="softwaregorilladiv"><Gorilla /></div>
-          <div id="softwareinlinecontainer">
-            <div className="software" id="softwareh1">
-              &lt;h1&gt;
-              {t('software.baslik')}
-              &lt;/h1&gt;
-            </div>
-            <p className="softwarep">
-              <br />
-              &emsp;
-              {ReactHtmlParser(t('software.paragraf1'))}
-            </p>
-            <p className="softwarep">
-              &emsp;
-              {ReactHtmlParser(t('software.paragraf2'))}
-            </p>
-            <p className="softwarep">
-              &emsp;
-              {ReactHtmlParser(t('software.paragraf3'))}
-            </p>
-            <div className="tech-logo">
-              <SoftwareLogo />
+      <React.Fragment>
+        <div className={`${clasName} hide-mobile`}>
+          <div>
+            <NavBar
+              isFooter={false}
+              tasarim={tasarim}
+              yazilim={yazilim}
+              hakkimizda={hakkimizda}
+              iletisim={iletisim}
+              activeId="yazilim"
+              hand={handle}
+            />
+          </div>
+          <div id="lang">
+            <ul className="lang-switcher">
+              <li>
+                <button type="button" className={enClassName} onClick={this.handleSetLanguage('en')}>En</button>
+              </li>
+              <li>
+                <button type="button" className={trClassName} onClick={this.handleSetLanguage('tr')}>Tr</button>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="softwareContainer"
+            style={{
+              height: '100%',
+            }}
+          >
+            <div><SoftwareGorilla /></div>
+            <div id="softwareinlinecontainer">
+              <div className="software" id="softwareh1">
+                &lt;h1&gt;
+                {t('software.baslik')}
+                &lt;/h1&gt;
+              </div>
+              <p className="softwarep">
+                <br />
+                &emsp;
+                {ReactHtmlParser(t('software.paragraf1'))}
+              </p>
+              <p className="softwarep">
+                &emsp;
+                {ReactHtmlParser(t('software.paragraf2'))}
+              </p>
+              <p className="softwarep">
+                &emsp;
+                {ReactHtmlParser(t('software.paragraf3'))}
+              </p>
+              <div className="tech-logo">
+                <SoftwareLogo />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

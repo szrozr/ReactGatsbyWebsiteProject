@@ -1,9 +1,29 @@
-.softwareGoril{
+#softwareinlinecontainer{
+  display: inline-block;
+  margin-left: 10%;
+  width: 120.5vw;
+}
+
+.SoftwareGorilla {
   border: 1px solid white;
   display: inline-block;
-  margin-left: 19%;
-  width: 150%;
+  margin-left: 20%;
+  width: 100%;
  // border: 1px solid green;
+}
+
+#softwaregorilladiv{
+  float: left;
+  width: 100%;
+ //  border: 1px solid red;
+  padding: 0;
+  height: 80%;
+}
+
+#softwaregorilldivmobile{
+  padding-top: 10%;
+  width: 65%;
+  height: 65%;
 }
 
 .software{
@@ -12,75 +32,33 @@
   font-weight: 600;
   line-height: normal;
   font-size: 1.9vw;
-  
-  color: #CD537C;
-  }
-
-  .softwareContainer{
-    margin-top: 12%;
-    width: 92vw;
-    align-self: center;
-    margin-left: 0;
-    display: flex;
-    // border: 1px solid blue;
-  }
-
-  .softwarep{
-    font-family: Space Mono;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 14px;
-    text-align: justify;
-    margin-top: 1vh;
-    @media screen and (min-width: 1600px) {
-      font-size: 18px;
-    }
-    }
-
-    .Amaranth{
-      color: #F12359;
-    }
-
-    .softwareLogo{
-      margin-left: 6%;
-      margin-top: 0vh;
-      width: 46vw;
-    }
-
-    #softwareinlinecontainer{
-      display: inline-block;
-      margin-left: 10%;
-    //  border: 1px solid blue;
-
-      width: 171vw;
-    }
-
-    #softwaregorilladiv{
-      float: left;
-      width: 102%;
-     //  border: 1px solid red;
-      padding: 0;
-      height: 55%;
-    }
-
-    // renkler
-.CarrotOrange{
-  color: #EF8F20;
-}
-
-.Corn{
-  color: #DFDC02;
-}
-
-.Mulberry{
-  color: #CD537C;
-}
-
-.BostonBlue{
   color: #3280C2;
+  }
+
+.softwareContainer{
+  width: 92vw;
+  align-self: center;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.InchWorm{
-  color: #A3E22C;
+.softwarep{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 1vh;
+  @media screen and (min-width: 1600px) {
+    font-size: 18px;
+  }
+}
+
+.softwareLogo{
+  margin-left: 6%;
+  margin-top: 0vh;
+  width: 46vw;
 }

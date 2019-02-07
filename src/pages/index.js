@@ -21,7 +21,7 @@ import Design from '../components/pages/design';
 import Layout from '../components/layout';
 import Software from '../components/pages/software';
 import Entrance from '../components/pages/entrance';
-
+import Gorilla from '../components/aboutus-images/gorillaimage';
 
 const bool = true;
 let transition = false;
@@ -37,9 +37,11 @@ setDefaultLanguage('en');
 // If you want to remember selected language
 setLanguageCookie('language', { path: '/', maxAge: 157680000 });
 
+
 class IndexPage extends React.Component {
   state = {
     height: 600,
+    width: 0,
     formControls: {
       name: {
         value: '',
@@ -56,13 +58,13 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
-    this.setComponentHeight();
-    window.addEventListener('resize', this.setComponentHeight);
+    this.setComponentDimension();
+    window.addEventListener('resize', this.setComponentDimension);
     // window.addEventListener('onselect', this.setComponentHeight);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.setComponentHeight);
+    window.removeEventListener('resize', this.setComponentDimension);
     // window.removeEventListener('onselect', this.setComponentHeight);
   }
 
@@ -71,7 +73,7 @@ class IndexPage extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
-    window.removeEventListener('resize', this.setComponentHeight);
+    window.removeEventListener('resize', this.setComponentDimension);
     entranceleave = false;
     aboutusleave = false;
     contactleave = false;
@@ -103,13 +105,14 @@ class IndexPage extends React.Component {
     }
   }
 
-  setComponentHeight = () => {
-    const height = Math.max(
-      document.documentElement.clientHeight,
-      window.innerHeight || 0,
-    );
+  setComponentDimension = () => {
+    // const height = Math.max(
+    //   document.documentElement.clientHeight,
+    //   window.innerHeight || 0,
+    // );
     this.setState({
-      height,
+      height: window.innerHeight,
+      width: window.innerWidth,
     });
   }
 
@@ -127,7 +130,25 @@ class IndexPage extends React.Component {
 
   render() {
     const { t } = this.props;
-    const { height, formControls } = this.state;
+    const { height, formControls, width } = this.state;
+    const isMobile = width <= 800;
+    console.log(isMobile, height, width);
+    if (isMobile) {
+      return (
+        <div>
+          <div style={{ margin: '5%', marginTop: '10%' }}>
+            <div className="puente2" style={{ textTransform: 'uppercase', textAlign: 'center' }}>
+              Mobile is under construction
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              We are hiring developers and designers! Send us your CV to
+              <a href="mailto: jobs@puentedev.io"> jobs@puentedev.io</a>
+            </div>
+          </div>
+          <Gorilla clasName="mobileGorila" />
+        </div>
+      );
+    }
     return (
       <Layout>
         <ReactFullpage

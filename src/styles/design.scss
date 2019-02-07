@@ -2,87 +2,59 @@
   display: inline-block;
   margin-left: 10%;
   width: 120.5vw;
-  margin-top: 50px;
 }
 
 .DesignGorilla{
   border: 1px solid white;
   display: inline-block;
   margin-left: 20%;
+  width: 100%;
  // border: 1px solid green;
 }
 
 #designgorilladiv{
   float: left;
-  width: 89%;
+  width: 100%;
  // border: 1px solid red;
   padding: 0;
-  height: 100%;
+  height: 80%;
+}
+
+#designgorilladivmobile{
+  padding-top: 10%;
+  width: 65%;
+  height: 65%;
 }
 
 .tasarim{
-font-family: Source Code Pro;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-font-size: 1.9vw;
-
-color: #CD537C;
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 1.9vw;
+  color: #52875D;
 }
 
-
-    .designp{
-    font-family: Space Mono;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    margin-top: 2vh;
-    font-size: 14px;
-    text-align: justify;
-    @media screen and (min-width: 1600px) {
-      font-size: 18px;
-    }
+.designContainer{
+  width: 92vw;
+  align-self: center;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.p{
-font-family: Space Mono;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 1.68vmin;
-text-align: justify;
-margin-top: 2vh;
-margin-left: 41vw;
-}
-
-ul {
-  list-style-type: circle;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  width: 17.7vw;
-}
-
-li {
-  padding-left: 1em; 
-  text-indent: -.7em;
-  color: #DF2467;
-  
-  display: inline;
-}
-
-li::before {
-  content: "• ";
-  color: #DFDC02; /* or whatever color you prefer */
-  font-weight: bold;
-}
-
-#list{
-  margin-top: 0.000001vh !important;
-}
-
-.pyellow{
-  color: #E2DE00;
+.designp{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  margin-top: 2vh;
+  font-size: 14px;
+  text-align: justify;
+  @media screen and (min-width: 1600px) {
+    font-size: 18px;
+  }
 }
 
 #designLogo{
@@ -90,40 +62,3 @@ li::before {
   margin-right: auto;
   display: block;
 }
-
-// yeni renkler
-.Heliotrope{
-  color: #AC80FF;
-}
-
-.CarrotOrange{
-  color: #EF8F20;
-}
-
-.RadicalRed{
-  color: #F92372;
-}
-
-.InchWorm{
-  color:#A3E22C;
-}
-
-.Viking{
-  color: #66CDDB;
-}
-
-.designContainer{
-  margin-top: 9%;
-  width: 92vw;
-  align-self: center;
-  margin-left: 0;
-  display: flex;
-}
-
-.Mulberry{
-  color: #CD537C;
- }
-
-
-
-

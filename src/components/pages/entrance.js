@@ -32,7 +32,15 @@ class Entrance extends React.Component {
     const enClassName = getLanguage() === 'en' ? 'is-active' : '';
     const trClassName = getLanguage() === 'tr' ? 'is-active' : '';
     return (
-      <div className={clasName} style={{ height: '100%' }}>
+      <div
+        className={clasName}
+        style={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-around',
+        }}
+      >
         <NavBar
           logovisibility={false}
           hand={handle}

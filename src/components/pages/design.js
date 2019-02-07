@@ -5,12 +5,15 @@ import {
   translate,
   getLanguage,
 } from 'react-switch-lang';
+
 import ReactHtmlParser from 'react-html-parser';
 import NavBar from '../NavBar';
+
 import '../../styles/design.scss';
-import '../../styles/software.scss';
+
 import DesignGorilla from '../design-images/designGorilla';
 import SubLogo from '../design-images/designlogo';
+
 
 class Design extends React.Component {
   componentDidMount() {
@@ -30,22 +33,22 @@ class Design extends React.Component {
     const {
       tasarim, yazilim, hakkimizda, iletisim, handle, pagetransition, onleave, t,
     } = this.props;
-    let clasname = 'notonscreen';
+    let clasName = 'notonscreen';
     const { isVisible } = this.props;
     if (isVisible) {
-      clasname = 'onscreen';
+      clasName = 'onscreen';
     }
     if (pagetransition) {
-      clasname = 'onscreen';
+      clasName = 'onscreen';
     }
     if (onleave) {
-      clasname = 'onscreen';
+      clasName = 'onscreen';
     }
     const enClassName = getLanguage() === 'en' ? 'is-active langpass' : 'langpass';
     const trClassName = getLanguage() === 'tr' ? 'is-active langpass' : 'langpass';
     return (
       <React.Fragment>
-        <div className={clasname} style={{ height: '100%' }}>
+        <div className={`${clasName} hide-mobile`}>
           <div>
             <NavBar
               isFooter={false}
@@ -73,12 +76,12 @@ class Design extends React.Component {
               height: '100%',
             }}
           >
-            <div id="designgorilladiv"><DesignGorilla /></div>
+            <div><DesignGorilla /></div>
             <div id="designinlinecontainer">
               <div className="tasarim" id="tasarimh1">
                 &lt;h1&gt;
                 {t('design.baslik')}
-                 &lt;/h1&gt;
+                &lt;/h1&gt;
               </div>
               <p className="designp">
                 <br />
@@ -98,6 +101,9 @@ class Design extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="hide-desktop">
+          <div id="designgorilladivmobile"><DesignGorilla /></div>
         </div>
       </React.Fragment>
     );

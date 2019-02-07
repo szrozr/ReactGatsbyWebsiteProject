@@ -1,27 +1,36 @@
-.sourcherry{
-  color: #DF2467;
+#aboutusinlinecontainer{
+  // border: 1px solid red;
+   margin-top: 9%;
+   margin-left: 5.5%;
+   display: inline-block;
+   margin-right: 7.5%;
+   padding-right: 1.5%;
+   width: 272vw;
+ }
+
+ .AboutUsGorilla{
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  margin-bottom: 0%;
+  left: 8%;
+  // border: 1px solid green;
 }
 
-.lightblue{
-  color: #68D8EE;
+#aboutusgorilladiv{
+  float: left;
+  width: 170%;
+  padding: 0;
+  display: flex;
+  // height: 5%;
+  // border: 1px solid red;
+  // margin: 23vh auto auto 0;
+  margin-top: auto;
+  margin-left: 1%;
 }
-.Heliotrope{
-  color: #AC80FF;
-}
-
-.CarrotOrange{
-  color:#EF8F20;
-}
-
-.abbey{
-  color: #58595B;
-}
-
-.CeriseRed{
-  color: #DF2467;
-}
-
-.aboutusBottomLogo{
+ 
+ .aboutusBottomLogo{
   display: flex;
   margin-left: 41vw;
   float: left;
@@ -54,6 +63,7 @@
     margin-left: 0;
     display: flex;
    // border: 1px solid blue;
+   
 }
 
 .aboutUsp{
@@ -65,40 +75,6 @@ font-size: 1.7vmin;
 text-align: justify;
 margin-top: 2vh;
 margin-left: 41vw;
-}
-
-// yeni renkler
-.Scorpion{
-  color: #5F5F5F;
-}
-
-.CarrotOrange{
-  color:#EF8F20;
-}
-
-.Heliotrope{
-  color:#AC80FF;
-}
-
-.Viking{
-  color: #66CDDB;
-}
-
-.CeriseRed{
-  color: #DF2467;
-}
-
-
-// yeni
-
-#aboutusinlinecontainer{
- // border: 1px solid red;
-  margin-top: 9%;
-  margin-left: 5.5%;
-  display: inline-block;
-  margin-right: 7.5%;
-  padding-right: 1.5%;
-  width: 272vw;
 }
 
 .aboutusp{
@@ -121,31 +97,8 @@ margin-left: 41vw;
   line-height: normal;
   font-size: 1.9vw;
   
-  color: #5F5F5F;
+  color: #C63D43;
   }
-
-#aboutusgorilladiv{
-  float: left;
-  width: 170%;
-  padding: 0;
-  display: flex;
-  // height: 5%;
-  // border: 1px solid red;
-
-  // margin: 23vh auto auto 0;
-  margin-top: auto;
-  margin-left: 1%;
-}
-
-.AboutUsGorilla{
-  display: inline-block;
-  width: 100%;
-  opacity: 0;
-  height: 100%;
-  margin-bottom: 0%;
-  left: 8%;
-  // border: 1px solid green;
-}
 
 .AboutUsGorillaVisible{
   position: relative;
